@@ -33,13 +33,7 @@ billy_rick:
     plus: BillyRick
 
 cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
-  avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
-  google:
-    plus: CorneliusFiddlebone
+  is_owner: true
 {% endhighlight %}
 
 To assign Billy Rick as an author for our post. You'd add the following YAML front matter to a post:
@@ -47,3 +41,5 @@ To assign Billy Rick as an author for our post. You'd add the following YAML fro
 {% highlight yaml %}
 author: billy_rick
 {% endhighlight %}
+
+If you'd like to specify the author for *every* post without having to duplicate the owner's information in `authors.yml`, list the author as an owner with the `is_owner` property and no others.

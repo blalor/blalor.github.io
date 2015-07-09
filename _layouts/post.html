@@ -24,8 +24,10 @@
         {% endif %}
       </header>
       <footer class="entry-meta">
-        {% if page.author %}
-          {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
+        {% if page.author and site.data.authors[page.author] and site.data.authors[page.author].is_owner != true %}
+          {% assign author = site.data.authors[page.author] %}
+        {% else %}
+          {% assign author = site.owner %}
         {% endif %}
         {% if author.avatar contains 'http' %}
           <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
