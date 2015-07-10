@@ -41,6 +41,15 @@
         {% if page.share %}{% include social-share.html %}{% endif %}
       </footer>
       <div class="entry-content">
+        {% for img in page.images %}
+        <figure>
+          <a href="{{ site.static_images_base_url }}/{{ img.path }}"><img src="{{ site.static_images_base_url }}/{{ img.path }}" alt="image"></a>
+          {% if img.exif.location.name %}
+          <figcaption>Taken near {{ img.exif.location.name }}</figcaption>
+          {% endif %}
+        </figure>
+        {% endfor %}
+
         {{ content }}
         {% if (site.owner.disqus-shortname and page.comments) or site.comments %}
           <div id="disqus_thread"></div><!-- /#disqus_thread -->
