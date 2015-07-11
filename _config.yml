@@ -40,7 +40,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Brian Lalor
-  avatar: "https://scontent-lga1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/539416_103615943115644_1599102171_n.jpg?oh=1ef3c174dabc3bc2a82a99a2c80a161c&oe=5621B9ED"
+  avatar: "https://scontent-lga1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/539416_103615943115644_1599102171_n.jpg?oh=1ef3c174dabc3bc2a82a99a2c80a161c&amp;oe=5621B9ED"
   email: blalor@bravo5.org
   # disqus-shortname:
   twitter: blalor
