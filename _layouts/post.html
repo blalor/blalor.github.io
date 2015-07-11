@@ -43,7 +43,7 @@
       <div class="entry-content">
         {% for img in page.images %}
         <figure>
-          <a href="{{ site.static_images_base_url }}/{{ img.path }}"><img src="{{ site.static_images_base_url }}/{{ img.path }}" alt="image"></a>
+          <a href="{{ site.static_images_base_url }}/unsafe/1600x0/{{ img.path }}"><img src="{{ site.static_images_base_url }}/unsafe/800x0/{{ img.path }}" alt="image"></a>
           <figcaption>{% if img.exif.location.name %}Taken near {{ img.exif.location.name }} {% endif %}{% if img.exif.location.latitude and img.exif.location.longitude %}<a href="http://www.google.com/maps/place/{{ img.exif.location.latitude }},{{ img.exif.location.longitude }}" target="_blank"><i class="fa fa-map-marker"></i></a>{% endif %}</figcaption>
         </figure>
         {% endfor %}
