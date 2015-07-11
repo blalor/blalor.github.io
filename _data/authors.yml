@@ -1,14 +1,12 @@
 # Authors
 
-billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
-  twitter: extravagantman
-  google:
-    plus: BillyRick
-
-cornelius_fiddlebone:
+blalor@bravo5.org:
   is_owner: true
+
+sycurtis@yahoo.com:
+  email: sycurtis@yahoo.com
+  name: Sarah Curtis
+  avatar: "https://scontent-lga1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/p206x206/10610853_517262521752176_419048501387795147_n.jpg?oh=8b7610497b00c4a7828fbcef0dad6ac4&amp;oe=562253A3"
+  # avatar: bio-photo-2.jpg
+  twitter: sycurtis
+  facebook: sarah.curtis.39794
