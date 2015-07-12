@@ -1,30 +1,20 @@
-# So Simple Theme
+Site content for alpha.beta5.org/blalor.github.io
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes/) -- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+## post-by-email photo flow
 
-[![Build Status](https://travis-ci.org/mmistakes/so-simple-theme.svg?branch=master)](https://travis-ci.org/mmistakes/so-simple-theme)
+1. user sends email to `<account>+<hmac>@<host>`
+2. procmail pipes message to [post-by-email](https://github.com/blalor/post-by-email/)
+3. post-by-email uploads images to S3
+3. post-by-email generates post with [Thumbor](http://thumbor.org/) paths
+4. post-by-email commits post
+5. post-receive hook on this repository triggers site build
 
-## So Simple Theme is all about:
+## image rendering flow
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page](http://mmistakes.github.io/so-simple-theme/404.html) to get you started.
-* Basic [search capabilities](https://github.com/mathaywarduk/jekyll-search)
-* Support for Disqus Comments
+Uses my [docker-thumbor](https://github.com/blalor/docker-thumbor/) image.
 
-![screenshot of So Simple Theme](http://mmistakes.github.io/so-simple-theme/images/so-simple-theme-preview.jpg)
-
-See a [live version of So Simple](http://mmistakes.github.io/so-simple-theme/) hosted on GitHub.
-
----
-
-## Getting Started
-
-So Simple takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
-
-To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/so-simple-theme/theme-setup/) for more information.
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mmistakes/so-simple-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+* `{{ site.static_images_base_url }}/path/to/image` is requested
+* if found in S3, image returned
+* if not found in S3, redirected to `<thumbor server>/path/to/imagae`
+* thumbor generates new image, stores in S3 at original path
+* subsequent requests for `{{ site.static_images_base_url }}/path/to/image` served directly from S3
