@@ -4,6 +4,8 @@ date: '2015-07-16T22:09:54-04:00'
 layout: post
 categories: blog
 tags:
+- night
+- Boston
 - photo
 author: blalor@bravo5.org
 images:
@@ -19,8 +21,6 @@ images:
       longitude: -71.05082777777777
       name: Congress Street, Boston MA, United States of America
 ---
-
-Tags: night, Boston
 
 I took this quickly on my way home after a few after-work drinks at Lucky's and Drink (where I had a beer to spite the fancy cocktail crowd). I love the Boston skyline at night. 
 
