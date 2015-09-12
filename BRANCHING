@@ -1,0 +1,12 @@
+BRANCHING
+
+Should allow importing upstream theme changes while keeping content-specific
+commits on their own timeline.
+
+In theory:
+
+* "<theme>" branch containing original theme files
+* "<theme>-customized" branch containing my customizations to the theme
+* "master" branch with `--no-ff` merges from "<theme>-customized"
+
+http://stackoverflow.com/questions/10248137/git-how-to-list-commits-on-this-branch-but-not-from-merged-branches
