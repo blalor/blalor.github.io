@@ -1,43 +1,32 @@
 ---
-layout: page
 title: Author Index
+layout: page
 excerpt: "An archive of posts sorted by author."
-search_omit: true
+show_excerpts: false
 ---
 
-{% assign posts_by_author = site.posts | group_by:"author" %}
+{%- assign postsByAuthor = site.posts | group_by_exp: 'post', 'post.author | default: post.authors[0] | default: site.author' -%}
 
-<ul class="tag-box inline">
-  {% for item in posts_by_author %}
-    {% assign author_id = item.name %}
-    {% assign posts = item.items %}
-
-    {% if site.data.authors[author_id] %}
-      {% if site.data.authors[author_id].is_owner != true %}
-        {% assign author = site.data.authors[author_id] %}
-      {% else %}
-        {% assign author = site.owner %}
-      {% endif %}
-
-      <li><a href="#{{ author_id | slugify }}">{{ author.name }} <span>{{ posts.size }}</span></a></li>
-    {% endif %}
+<ul class="taxonomy-index">
+  {% for a in postsByAuthor %}
+  {%- assign author = site.data.authors[a.name] | default: a.name -%}
+    <li>
+      <a href="#{{ author.name }}">
+        <strong>{{ author.name }}</strong> <span class="taxonomy-count">{{ a.items | size }}</span>
+      </a>
+    </li>
   {% endfor %}
 </ul>
 
-{% for item in posts_by_author %}
-  {% assign author_id = item.name %}
-  {% assign posts = item.items %}
-  {% if site.data.authors[author_id] %}
-    {% if site.data.authors[author_id].is_owner != true %}
-      {% assign author = site.data.authors[author_id] %}
-    {% else %}
-      {% assign author = site.owner %}
-    {% endif %}
-  <h2 id="{{ author_id | slugify}}">{{ author.name }}</h2>
-  <ul class="post-list">
-    {% for post in posts %}{% if post.title != null %}
-    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></li>
-    {% endif %}{% endfor %}
-  </ul>
-  {% endif %}
+{% for a in postsByAuthor %}
+{%- assign author = site.data.authors[a.name] | default: a.name -%}
+  <section id="{{ author.name }}" class="taxonomy-section">
+    <h2 class="taxonomy-title">{{ author.name }}</h2>
+    <div class="entries-{{ page.entries_layout | default: 'list' }}">
+      {% for entry in a.items %}
+        {% include entry.html %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
 {% endfor %}
