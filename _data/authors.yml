@@ -1,12 +1,15 @@
 # Authors
 
 blalor@bravo5.org:
-  is_owner: true
+  name: Brian Lalor
+  picture: https://s.gravatar.com/avatar/5a89e44fd4d9a4ef1c9361af575587a8?s=80
+  links:
+    - title: Instagram
+      url: https://instagram.com/brian.lalor
+      icon: fab fa-instagram
+    - title: GitHub
+      url: https://github.com/blalor
+      icon: fab fa-github-square
 
 sycurtis@yahoo.com:
-  email: sycurtis@yahoo.com
   name: Sarah Curtis
-  avatar: "https://scontent-lga1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/p206x206/10610853_517262521752176_419048501387795147_n.jpg?oh=8b7610497b00c4a7828fbcef0dad6ac4&amp;oe=562253A3"
-  # avatar: bio-photo-2.jpg
-  twitter: sycurtis
-  facebook: sarah.curtis.39794

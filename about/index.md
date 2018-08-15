@@ -4,8 +4,9 @@ title: Bonneville or Bust
 excerpt: "#sciencedogging"
 modified: 2015-07-09T22:09:34-04:00
 image:
-  feature: bonneville-bike-reflected.jpg
-  credit: Brian Lalor
+  path: /images/bonneville-bike-reflected.jpg
+  caption: >-
+    Photo Credit: Brian Lalor
 ---
 
 I'm heading back to Bonneville and posting pictures as I go.
