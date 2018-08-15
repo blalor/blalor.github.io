@@ -1,0 +1,57 @@
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+jobs:
+    build:
+        docker:
+            - image: circleci/ruby:2.4
+
+        steps:
+            - checkout
+
+            # Download and cache dependencies
+            - restore_cache:
+                keys:
+                    - v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+                    # fallback to using the latest cache if no exact match is found
+                    - v1-dependencies-
+
+            - run:
+                name: install dependencies
+                command: |-
+                    bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+            - save_cache:
+                key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+                paths:
+                    - ./vendor/bundle
+
+            - run: bundle exec jekyll build
+
+            - persist_to_workspace:
+                root: .
+                paths: _site/*
+
+    deploy:
+        docker:
+            - image: circleci/python:3
+
+        steps:
+            - attach_workspace:
+                at: workspace
+            - run: pip install awscli --upgrade --user
+            - run: ~/.local/bin/aws --version
+            - run: find . -type f
+            - run: ~/.local/bin/aws s3 ls
+
+workflows:
+    version: 2
+    build-and-deploy:
+        jobs:
+            - build
+            - deploy:
+                requires:
+                    - build
