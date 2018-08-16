@@ -18,3 +18,7 @@ variable "aws_region" {
 #     type = "list"
 #     description = "list of hostnames the site will be served under"
 # }
+
+data "aws_ip_ranges" "cloudfront" {
+    services = ["cloudfront"]
+}

@@ -1,5 +1,6 @@
-## something something allows cloudfront to access the bucket
-resource "aws_cloudfront_origin_access_identity" "main" {}
+locals {
+    s3_origin_id = "myS3Origin" ## ¯\_(ツ)_/¯
+}
 
 ## cloudfront distribution
 resource "aws_cloudfront_distribution" "main" {
@@ -24,11 +25,18 @@ resource "aws_cloudfront_distribution" "main" {
     }
 
     origin {
-        domain_name = "${aws_s3_bucket.site_bucket.bucket_regional_domain_name}"
+        domain_name = "${aws_s3_bucket.site_bucket.website_endpoint}"
         origin_id   = "${local.s3_origin_id}"
 
-        s3_origin_config {
-            origin_access_identity = "${aws_cloudfront_origin_access_identity.main.cloudfront_access_identity_path}"
+        ## using the s3 website setup instead of the s3-specific origin to take
+        ## advantage of the index document config.
+        custom_origin_config {
+            origin_protocol_policy = "http-only"
+            http_port = 80
+
+            # … but "http-only"!
+            https_port = 443
+            origin_ssl_protocols = [ "TLSv1", "TLSv1.1", "TLSv1.2" ]
         }
     }
 
@@ -50,11 +58,5 @@ resource "aws_cloudfront_distribution" "main" {
                 forward = "none"
             }
         }
-    }
-
-    custom_error_response {
-        error_code = 404
-        response_code = 404
-        response_page_path = "/404.html"
     }
 }
