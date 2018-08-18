@@ -1,7 +1,3 @@
-locals {
-    s3_origin_id = "myS3Origin" ## ¯\_(ツ)_/¯
-}
-
 ## cloudfront distribution
 resource "aws_cloudfront_distribution" "main" {
     enabled             = true
@@ -25,8 +21,9 @@ resource "aws_cloudfront_distribution" "main" {
     }
 
     origin {
+        origin_id   = "site-origin"
         domain_name = "${aws_s3_bucket.site_bucket.website_endpoint}"
-        origin_id   = "${local.s3_origin_id}"
+        origin_path = "${local.jekyll_site_prefix}"
 
         ## using the s3 website setup instead of the s3-specific origin to take
         ## advantage of the index document config.
@@ -41,7 +38,7 @@ resource "aws_cloudfront_distribution" "main" {
     }
 
     default_cache_behavior {
-        target_origin_id = "${local.s3_origin_id}"
+        target_origin_id = "site-origin"
 
         viewer_protocol_policy = "redirect-to-https"
 

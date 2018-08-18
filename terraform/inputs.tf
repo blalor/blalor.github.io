@@ -3,11 +3,6 @@ variable "site_name" {
     description = "the domain name of the site"
 }
 
-variable "bucket_name" {
-    type = "string"
-    description = "the name of the s3 bucket where the static site will be stored"
-}
-
 variable "aws_region" {
     type = "string"
     description = "the aws region where resources will be created"
@@ -21,4 +16,9 @@ variable "aws_region" {
 
 data "aws_ip_ranges" "cloudfront" {
     services = ["cloudfront"]
+}
+
+locals {
+    ## where in the bucket the static site files exist
+    jekyll_site_prefix = "/_site"
 }
