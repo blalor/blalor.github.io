@@ -4,7 +4,7 @@ description: Bonneville or Bust
 timezone: "America/New_York"
 
 # the base hostname & protocol for your site, e.g. http://example.com
-url: http://blalor.github.io
+url: https://beta5.org
 
 # the subpath of your site, e.g. /blog
 baseurl: "/"
@@ -15,7 +15,7 @@ static_images_base_url: http://static.images.alpha.beta5.org
 author: blalor@bravo5.org
 
 permalink: /:categories/:year-:month-:day-:title.html
-category_archive_path: "/categories/#"
+#category_archive_path: "/categories/#"
 tag_archive_path: "/tags/#"
 
 theme: jekyll-theme-so-simple

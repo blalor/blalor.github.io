@@ -4,35 +4,58 @@
 #
 version: 2
 jobs:
-    build:
+    sanity-check:
         docker:
-            - image: circleci/ruby:2.4
+            - image: &RUBY_IMAGE circleci/ruby:2.4
 
         steps:
-            - checkout
+            - run:
+                name: environment
+                command: |-
+                    set -u
+
+                    function fail() {
+                        echo "$*"
+                        exit 1
+                    }
+
+                    test -n "${AWS_ACCESS_KEY_ID:-}"     || fail "AWS_ACCESS_KEY_ID not set"
+                    test -n "${AWS_SECRET_ACCESS_KEY:-}" || fail "AWS_SECRET_ACCESS_KEY not set"
+                    test -n "${SITE_BUCKET:-}"           || fail "SITE_BUCKET not set"
+                    test -n "${SITE_BUCKET_PREFIX:-}"    || fail "SITE_BUCKET_PREFIX not set"
+
+    build-site:
+        docker:
+            - image: *RUBY_IMAGE
+
+        working_directory: ~/project/jekyll
+
+        steps:
+            - checkout:
+                path: ~/project
 
             # Download and cache dependencies
             - restore_cache:
                 keys:
-                    - v1-dependencies-{{ checksum "Gemfile.lock" }}
-
-                    # fallback to using the latest cache if no exact match is found
-                    - v1-dependencies-
+                    - &CACHE_KEY v2-dependencies-{{ checksum "Gemfile.lock" }}
 
             - run:
                 name: install dependencies
                 command: |-
-                    bundle install --jobs=4 --retry=3 --path vendor/bundle
+                    bundle install --jobs=4 --retry=3 --path /tmp/vendor/bundle
 
             - save_cache:
-                key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+                key: *CACHE_KEY
                 paths:
-                    - ./vendor/bundle
+                    - /tmp/vendor/bundle
 
-            - run: bundle exec jekyll build
+            - run:
+                name: jekyll build
+                command: |-
+                    bundle exec jekyll build
 
             - persist_to_workspace:
-                root: .
+                root: "."
                 paths: _site/*
 
     deploy:
@@ -41,17 +64,25 @@ jobs:
 
         steps:
             - attach_workspace:
-                at: workspace
-            - run: pip install awscli --upgrade --user
-            - run: ~/.local/bin/aws --version
-            - run: find . -type f
-            - run: ~/.local/bin/aws s3 ls
+                at: "."
+
+            - run:
+                name: install dependencies
+                command: pip install awscli --upgrade --user
+
+            - run:
+                name: sync site
+                command: |-
+                    ~/.local/bin/aws s3 sync --quiet --delete _site/ "s3://${SITE_BUCKET}/${SITE_BUCKET_PREFIX#/}"
 
 workflows:
     version: 2
     build-and-deploy:
         jobs:
-            - build
+            - sanity-check
+            - build-site:
+                requires:
+                    - sanity-check
             - deploy:
                 requires:
-                    - build
+                    - build-site
