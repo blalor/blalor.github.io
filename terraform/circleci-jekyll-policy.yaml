@@ -1,0 +1,77 @@
+## this policy is used to create a policy that allows for managing the terraform
+## config and publishing the site from circleci.
+##
+##   aws --profile personal iam create-user       --user-name circleci-jekyll
+##   aws --profile personal iam create-access-key --user-name circleci-jekyll
+##   aws --profile personal iam put-user-policy \
+##       --user-name circleci-jekyll \
+##       --policy-name terraform \
+##       --policy-document "$(
+##           yaml2json circleci-jekyll-policy.yaml | sed -e 's#@STATE_BUCKET@#my-state-bucket#g'
+##       )"
+
+Version: "2012-10-17"
+Statement:
+    ## the first two statements are required to give terraform access to the
+    ## bucket where the state is stored
+    -   Sid: RemoteStateList
+        Effect: Allow
+        Resource: arn:aws:s3:::@STATE_BUCKET@
+        Action:
+            - s3:ListBucket
+
+    -   Sid: RemoteStateModify
+        Effect: Allow
+        Resource: arn:aws:s3:::@STATE_BUCKET@/jekyll-site/terraform.tfstate
+        Action:
+            - s3:PutObject
+            - s3:GetObject
+
+    ## acm
+    -   Sid: acm
+        Effect: Allow
+        Resource: "*"
+        Action:
+            - acm:DescribeCertificate
+            - acm:DeleteCertificate
+            - acm:RequestCertificate
+
+    ## route53
+    -   Sid: route53
+        Effect: Allow
+        Resource: "*"
+        Action:
+            - route53:GetHostedZone
+            - route53:ListHostedZones
+            - route53:ListResourceRecordSets
+            - route53:ChangeResourceRecordSets
+            - route53:GetChange
+
+    ## s3 bucket for site resources; using bucket_prefix.
+    -   Sid: S3BucketList
+        Effect: Allow
+        Resource:
+            - arn:aws:s3:::beta5.org-*
+        Action:
+            - s3:ListBucket
+
+    -   Sid: S3BucketModify
+        Effect: Allow
+        Resource:
+            - arn:aws:s3:::beta5.org-*
+            - arn:aws:s3:::beta5.org-*/*
+        Action:
+            - s3:*
+
+    ## cloudfront
+    -   Sid: cloudfront
+        Effect: Allow
+        Resource:
+            - "*"
+        Action:
+            - cloudfront:GetDistribution
+            - cloudfront:ListTagsForResource
+            - cloudfront:UpdateDistribution
+            - cloudfront:DeleteDistribution
+            - cloudfront:CreateDistribution
+            - cloudfront:TagResource
