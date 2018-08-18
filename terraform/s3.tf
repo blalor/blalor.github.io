@@ -1,12 +1,14 @@
 ## the bucket where the objects will be stored
 resource "aws_s3_bucket" "site_bucket" {
-    bucket = "${var.bucket_name}"
+    bucket_prefix = "${var.site_name}-"
     acl = "private"
 
     website {
         ## required, otherwise accessing /foo/ for /foo/index.html will 404
         index_document = "index.html"
         error_document = "404.html"
+
+        ## future: https://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html
     }
 
     tags {
