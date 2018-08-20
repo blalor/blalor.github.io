@@ -16,13 +16,15 @@ Statement:
     ## bucket where the state is stored
     -   Sid: RemoteStateList
         Effect: Allow
-        Resource: arn:aws:s3:::@STATE_BUCKET@
+        Resource:
+            - arn:aws:s3:::@STATE_BUCKET@
         Action:
             - s3:ListBucket
 
     -   Sid: RemoteStateModify
         Effect: Allow
-        Resource: arn:aws:s3:::@STATE_BUCKET@/jekyll-site/terraform.tfstate
+        Resource:
+            - arn:aws:s3:::@STATE_BUCKET@/jekyll-site/terraform.tfstate
         Action:
             - s3:PutObject
             - s3:GetObject
@@ -30,7 +32,8 @@ Statement:
     ## acm
     -   Sid: acm
         Effect: Allow
-        Resource: "*"
+        Resource:
+            - "*"
         Action:
             - acm:DescribeCertificate
             - acm:DeleteCertificate
@@ -39,7 +42,8 @@ Statement:
     ## route53
     -   Sid: route53
         Effect: Allow
-        Resource: "*"
+        Resource:
+            - "*"
         Action:
             - route53:GetHostedZone
             - route53:ListHostedZones
@@ -48,20 +52,25 @@ Statement:
             - route53:GetChange
 
     ## s3 bucket for site resources; using bucket_prefix.
-    -   Sid: S3BucketList
-        Effect: Allow
-        Resource:
-            - arn:aws:s3:::beta5.org-*
-        Action:
-            - s3:ListBucket
-
-    -   Sid: S3BucketModify
+    -   Sid: SiteBucket
         Effect: Allow
         Resource:
             - arn:aws:s3:::beta5.org-*
             - arn:aws:s3:::beta5.org-*/*
         Action:
             - s3:*
+
+    ## apigateway
+    -   Sid: apigateway
+        Effect: Allow
+        Resource:
+            - arn:aws:apigateway:*::/restapis/*
+        Action:
+            - apigateway:DELETE
+            - apigateway:GET
+            - apigateway:PATCH
+            - apigateway:POST
+            - apigateway:PUT
 
     ## cloudfront
     -   Sid: cloudfront
@@ -75,3 +84,30 @@ Statement:
             - cloudfront:DeleteDistribution
             - cloudfront:CreateDistribution
             - cloudfront:TagResource
+
+    ## iam
+    -   Sid: iam
+        Effect: Allow
+        Resource:
+            - arn:aws:iam::*:role/service-role/*
+        Action:
+            - iam:CreateRole
+            - iam:GetRole
+            - iam:GetRolePolicy
+            - iam:PassRole
+            - iam:PutRolePolicy
+
+    ## lambda
+    -   Sid: lambda
+        Effect: Allow
+        Resource:
+            - "*"
+        Action:
+            - lambda:AddPermission
+            - lambda:CreateFunction
+            - lambda:GetFunction
+            - lambda:GetPolicy
+            - lambda:ListVersionsByFunction
+            - lambda:RemovePermission
+            - lambda:UpdateFunctionCode
+            - lambda:UpdateFunctionConfiguration
