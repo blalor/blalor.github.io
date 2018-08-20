@@ -96,11 +96,9 @@ jobs:
             - attach_workspace:
                 at: ~/project
 
-            - run: find ~/project -type f
-
             - run: terraform init -input=false -backend-config=bucket=${STATE_BUCKET} -backend-config=region=${STATE_BUCKET_REGION}
             - run: terraform plan -input=false -out=plan
-            # - run: terraform apply plan
+            - run: terraform apply plan
             - run: terraform output -json > terraform.json
 
             - persist_to_workspace:
