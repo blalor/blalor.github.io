@@ -79,8 +79,8 @@ jobs:
                     - thumbor/dist
 
             - persist_to_workspace:
-                root: thumbor/dist
-                paths: image-handler.zip
+                root: "."
+                paths: thumbor/dist/image-handler.zip
 
     terraform:
         docker:
