@@ -9,3 +9,7 @@ provider "aws" {
     version = "~> 1.31"
     region = "us-east-1"
 }
+
+provider "random" {
+    version = "~> 2.0"
+}
