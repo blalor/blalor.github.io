@@ -34,7 +34,6 @@ jobs:
             - checkout:
                 path: ~/project
 
-            # Download and cache dependencies
             - restore_cache:
                 keys:
                     - &CACHE_KEY v2-dependencies-{{ checksum "Gemfile.lock" }}
@@ -58,7 +57,7 @@ jobs:
                 root: "."
                 paths: _site/*
 
-    deploy:
+    deploy-site:
         docker:
             - image: circleci/python:3
 
@@ -75,14 +74,42 @@ jobs:
                 command: |-
                     ~/.local/bin/aws s3 sync --quiet --delete _site/ "s3://${SITE_BUCKET}/${SITE_BUCKET_PREFIX#/}"
 
+    package-thumbor:
+        docker:
+            - image: circleci/python:2.7
+
+        steps:
+            - checkout
+
+            ## only build when the thumbor build script or config file has changed
+            - restore_cache:
+                keys:
+                    - &THUMBOR_CACHE_KEY v1-dependencies-{{ checksum "thumbor/build.sh" }}-{{ checksum "thumbor/thumbor.conf" }}
+
+            - run:
+                name: package thumbor function
+                command: test -e thumbor/dist/image-handler.zip || thumbor/build.sh
+
+            - save_cache:
+                key: *THUMBOR_CACHE_KEY
+                paths:
+                    - thumbor/dist
+
+            - persist_to_workspace:
+                root: thumbor/dist
+                paths: image-handler.zip
+
 workflows:
     version: 2
     build-and-deploy:
         jobs:
             - sanity-check
+            - package-thumbor
+
             - build-site:
                 requires:
                     - sanity-check
-            - deploy:
+
+            - deploy-site:
                 requires:
                     - build-site
