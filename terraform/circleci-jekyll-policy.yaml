@@ -7,7 +7,7 @@
 ##       --user-name circleci-jekyll \
 ##       --policy-name terraform \
 ##       --policy-document "$(
-##           yaml2json circleci-jekyll-policy.yaml | sed -e 's#@STATE_BUCKET@#my-state-bucket#g'
+##           yaml2json circleci-jekyll-policy.yaml | sed -e 's#@STATE_BUCKET@#blalor-terraform#g'
 ##       )"
 
 Version: "2012-10-17"
@@ -111,3 +111,14 @@ Statement:
             - lambda:RemovePermission
             - lambda:UpdateFunctionCode
             - lambda:UpdateFunctionConfiguration
+
+    ## ses
+    -   Sid: ses
+        Effect: Allow
+        Resource:
+            - "*"
+        Action:
+            - ses:VerifyDomainIdentity
+            - ses:GetIdentityVerificationAttributes
+            - ses:VerifyDomainDkim
+            - ses:GetIdentityDkimAttributes
