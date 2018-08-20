@@ -21,8 +21,7 @@ jobs:
 
                     test -n "${AWS_ACCESS_KEY_ID:-}"     || fail "AWS_ACCESS_KEY_ID not set"
                     test -n "${AWS_SECRET_ACCESS_KEY:-}" || fail "AWS_SECRET_ACCESS_KEY not set"
-                    test -n "${SITE_BUCKET:-}"           || fail "SITE_BUCKET not set"
-                    test -n "${SITE_BUCKET_PREFIX:-}"    || fail "SITE_BUCKET_PREFIX not set"
+                    test -n "${STATE_BUCKET:-}"          || fail "STATE_BUCKET not set"
 
     build-site:
         docker:
@@ -57,23 +56,6 @@ jobs:
                 root: "."
                 paths: _site/*
 
-    deploy-site:
-        docker:
-            - image: circleci/python:3
-
-        steps:
-            - attach_workspace:
-                at: "."
-
-            - run:
-                name: install dependencies
-                command: pip install awscli --upgrade --user
-
-            - run:
-                name: sync site
-                command: |-
-                    ~/.local/bin/aws s3 sync --quiet --delete _site/ "s3://${SITE_BUCKET}/${SITE_BUCKET_PREFIX#/}"
-
     package-thumbor:
         docker:
             - image: circleci/python:2.7
@@ -99,6 +81,55 @@ jobs:
                 root: thumbor/dist
                 paths: image-handler.zip
 
+    terraform:
+        docker:
+            - image: hashicorp/terraform:0.11.7
+
+        working_directory: ~/project/terraform
+
+        steps:
+            - checkout
+
+            ## populate ~/project/thumbor/dist
+            - attach_workspace:
+                at: ~/project
+
+            - run: find ~/project -type f
+
+            - run: terraform init -input=false -backend-config=bucket=${STATE_BUCKET}
+            - run: terraform plan -input=false -out=plan
+            # - run: terraform apply plan
+            - run: terraform output -json > terraform.json
+
+            - persist_to_workspace:
+                root: "."
+                paths: terraform.json
+
+    deploy-site:
+        docker:
+            - image: circleci/python:3
+
+        steps:
+            - attach_workspace:
+                at: "."
+
+            - run:
+                name: install dependencies
+                command: pip install awscli --upgrade --user
+
+            - run:
+                name: sync site
+                command: |-
+                    target="$( python -c '
+import json
+tf = json.load(open("terraform.json"))
+print("s3://%s%s" % (
+    tf["bucket"]["value"],
+    tf["jekyll_site_prefix"]["value"]
+))' )"
+
+                    ~/.local/bin/aws s3 sync --quiet --delete _site/ "${target}"
+
 workflows:
     version: 2
     build-and-deploy:
@@ -110,6 +141,12 @@ workflows:
                 requires:
                     - sanity-check
 
+            - terraform:
+                requires:
+                    - sanity-check
+                    - package-thumbor
+
             - deploy-site:
                 requires:
                     - build-site
+                    - terraform
