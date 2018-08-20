@@ -35,6 +35,6 @@ resource "aws_api_gateway_deployment" "main" {
 
     rest_api_id = "${local.rest_api_id}"
 
-    stage_name = "prod"
+    stage_name = "photos"
     stage_description = "${random_pet.deployment_trigger.id}"
 }

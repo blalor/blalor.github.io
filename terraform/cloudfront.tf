@@ -37,6 +37,18 @@ resource "aws_cloudfront_distribution" "main" {
         }
     }
 
+    origin {
+        origin_id   = "thumbor"
+        domain_name = "${element(split("/", aws_api_gateway_deployment.main.invoke_url), 2)}"
+
+        custom_origin_config {
+            origin_protocol_policy = "https-only"
+            http_port = 80 # oh well
+            https_port = 443
+            origin_ssl_protocols = [ "TLSv1", "TLSv1.1", "TLSv1.2" ]
+        }
+    }
+
     default_cache_behavior {
         target_origin_id = "site-origin"
 
@@ -47,6 +59,23 @@ resource "aws_cloudfront_distribution" "main" {
 
         compress = true
         min_ttl = 600
+
+        forwarded_values {
+            query_string = false
+
+            cookies {
+                forward = "none"
+            }
+        }
+    }
+
+    ordered_cache_behavior {
+        target_origin_id = "thumbor"
+        path_pattern = "/${element(split("/", aws_api_gateway_deployment.main.invoke_url), 3)}/*"
+        viewer_protocol_policy = "redirect-to-https"
+
+        allowed_methods = [ "HEAD", "GET" ]
+        cached_methods  = [ "HEAD", "GET" ]
 
         forwarded_values {
             query_string = false
