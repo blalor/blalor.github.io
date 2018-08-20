@@ -9,7 +9,7 @@ url: https://beta5.org
 # the subpath of your site, e.g. /blog
 baseurl: "/"
 
-static_images_base_url: http://static.images.alpha.beta5.org
+static_images_base_url: https://beta5.org/photos
 
 ## maps to _data/authors.yaml
 author: blalor@bravo5.org

@@ -7,7 +7,7 @@ tags:
 - photo
 author: blalor@bravo5.org
 images:
-- path: img/email/2015-07-11-adam-tries-on-sunglasses/File Jul 09, 1 47 01 PM.jpeg
+- path: email/2015-07-11-adam-tries-on-sunglasses/File Jul 09, 1 47 01 PM.jpeg
   exif:
     cameraMake: Apple
     cameraModel: iPhone 6

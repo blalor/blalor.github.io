@@ -7,7 +7,7 @@ tags:
 - photo
 author: blalor@bravo5.org
 images:
-- path: img/email/2015-07-11-the-hounds/IMG_3546.JPG
+- path: email/2015-07-11-the-hounds/IMG_3546.JPG
   exif:
     cameraMake: Apple
     cameraModel: iPhone 6
@@ -18,7 +18,7 @@ images:
       latitude: 42.404177777777775
       longitude: -71.10695555555554
       name: Main St @ Mayberry Ave, Main Street, Medford MA, United States of America
-- path: img/email/2015-07-11-the-hounds/IMG_5855.JPG
+- path: email/2015-07-11-the-hounds/IMG_5855.JPG
   exif:
     cameraMake: Apple
     cameraModel: iPhone 6

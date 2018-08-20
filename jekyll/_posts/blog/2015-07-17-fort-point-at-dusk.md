@@ -9,7 +9,7 @@ tags:
 - photo
 author: blalor@bravo5.org
 images:
-- path: img/email/2015-07-17-fort-point-at-dusk/IMG_5973.JPG
+- path: email/2015-07-17-fort-point-at-dusk/IMG_5973.JPG
   exif:
     cameraMake: Apple
     cameraModel: iPhone 6

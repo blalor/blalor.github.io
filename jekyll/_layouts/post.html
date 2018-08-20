@@ -25,7 +25,7 @@ layout: default
         <div class="e-content">
           {% for img in page.images -%}
           <figure>
-            <a href="{{ site.static_images_base_url }}/unsafe/1600x0/{{ img.path }}" data-lity><img src="{{ site.static_images_base_url }}/unsafe/1600x0/{{ img.path }}" alt="image"></a>
+            <a href="{{ site.static_images_base_url }}/fit-in/1600x/{{ img.path }}" data-lity><img src="{{ site.static_images_base_url }}/fit-in/800x/{{ img.path }}" alt="image"></a>
             {% if img.exif.location.name -%}
             <figcaption>
               {%- if img.exif.location.name -%}

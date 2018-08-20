@@ -7,7 +7,7 @@ tags:
 - photo
 author: blalor@bravo5.org
 images:
-- path: img/email/2015-07-11-iceland-waterfall/15725895949_32dcce7cba_o.jpg
+- path: email/2015-07-11-iceland-waterfall/15725895949_32dcce7cba_o.jpg
   exif:
     cameraMake: Apple
     cameraModel: iPhone 6
