@@ -1,6 +1,7 @@
 variable "site_name" {
     type = "string"
     description = "the domain name of the site"
+    default = "beta5.org"
 }
 
 variable "aws_region" {
