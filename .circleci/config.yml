@@ -120,13 +120,7 @@ jobs:
             - run:
                 name: sync site
                 command: |-
-                    target="$( python -c '
-import json
-tf = json.load(open("terraform.json"))
-print("s3://%s%s" % (
-    tf["bucket"]["value"],
-    tf["jekyll_site_prefix"]["value"]
-))' )"
+                    target="$( jq -r '"s3://" + .bucket.value + .jekyll_site_prefix.value' terraform.json )"
 
                     ~/.local/bin/aws s3 sync --quiet --delete _site/ "${target}"
 
