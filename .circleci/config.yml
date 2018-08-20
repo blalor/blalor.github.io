@@ -22,6 +22,7 @@ jobs:
                     test -n "${AWS_ACCESS_KEY_ID:-}"     || fail "AWS_ACCESS_KEY_ID not set"
                     test -n "${AWS_SECRET_ACCESS_KEY:-}" || fail "AWS_SECRET_ACCESS_KEY not set"
                     test -n "${STATE_BUCKET:-}"          || fail "STATE_BUCKET not set"
+                    test -n "${STATE_BUCKET_REGION:-}"   || fail "STATE_BUCKET_REGION not set"
 
     build-site:
         docker:
@@ -97,7 +98,7 @@ jobs:
 
             - run: find ~/project -type f
 
-            - run: terraform init -input=false -backend-config=bucket=${STATE_BUCKET}
+            - run: terraform init -input=false -backend-config=bucket=${STATE_BUCKET} -backend-config=region=${STATE_BUCKET_REGION}
             - run: terraform plan -input=false -out=plan
             # - run: terraform apply plan
             - run: terraform output -json > terraform.json
