@@ -122,3 +122,6 @@ Statement:
             - ses:GetIdentityVerificationAttributes
             - ses:VerifyDomainDkim
             - ses:GetIdentityDkimAttributes
+            - ses:CreateReceiptRule
+            - ses:UpdateReceiptRule
+            - ses:DescribeReceiptRule

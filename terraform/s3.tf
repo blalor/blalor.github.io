@@ -49,6 +49,23 @@ data "aws_iam_policy_document" "s3_origin_policy" {
 
         }
     }
+
+    # https://docs.aws.amazon.com/ses/latest/DeveloperGuide/receiving-email-permissions.html
+    statement {
+        actions = ["s3:PutObject"]
+        resources = ["${aws_s3_bucket.site_bucket.arn}/${local.emails_prefix}/*"]
+
+        principals {
+            type = "Service"
+            identifiers = [ "ses.amazonaws.com" ]
+        }
+
+        condition {
+            test = "StringEquals"
+            variable = "aws:Referer"
+            values = [ "${data.aws_caller_identity.current.account_id}" ]
+        }
+    }
 }
 
 resource "aws_s3_bucket_policy" "s3_origin_policy" {

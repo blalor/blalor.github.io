@@ -25,6 +25,8 @@ data "aws_ip_ranges" "cloudfront" {
     services = ["cloudfront"]
 }
 
+data "aws_caller_identity" "current" {}
+
 locals {
     ## where in the bucket the static site files exist
     jekyll_site_prefix = "_site"
