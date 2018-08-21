@@ -4,6 +4,12 @@ variable "site_name" {
     default = "beta5.org"
 }
 
+variable "post_by_email_hostname" {
+    type = "string"
+    description = "hostname part of fqdn under site_name to serve as endpoint for post-by-email service"
+    default = "pbe"
+}
+
 variable "aws_region" {
     type = "string"
     description = "the aws region where resources will be created"
