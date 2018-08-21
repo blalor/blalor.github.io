@@ -27,6 +27,7 @@ data "aws_ip_ranges" "cloudfront" {
 
 locals {
     ## where in the bucket the static site files exist
-    jekyll_site_prefix = "/_site"
-    photos_prefix = "/photos"
+    jekyll_site_prefix = "_site"
+    photos_prefix = "photos"
+    emails_prefix = "emails"
 }

@@ -13,9 +13,9 @@ variable "package_path" {
     description = "path to the deployment package"
 }
 
-variable "photos_path" {
+variable "photos_prefix" {
     type = "string"
-    description = "path where images are stored in the bucket"
+    description = "prefix in bucket where images are stored"
 }
 
 variable "api_gateway_exec_arn" {

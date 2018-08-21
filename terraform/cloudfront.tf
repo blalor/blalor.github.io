@@ -23,7 +23,7 @@ resource "aws_cloudfront_distribution" "main" {
     origin {
         origin_id   = "site-origin"
         domain_name = "${aws_s3_bucket.site_bucket.website_endpoint}"
-        origin_path = "${local.jekyll_site_prefix}"
+        origin_path = "/${local.jekyll_site_prefix}"
 
         ## using the s3 website setup instead of the s3-specific origin to take
         ## advantage of the index document config.

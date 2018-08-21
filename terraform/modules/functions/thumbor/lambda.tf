@@ -23,7 +23,7 @@ resource "aws_lambda_function" "fn" {
             TC_AWS_ENDPOINT = "https://s3.amazonaws.com"
             TC_AWS_REGION = "${var.bucket_region}"
             TC_AWS_LOADER_BUCKET = "${var.bucket}"
-            TC_AWS_LOADER_ROOT_PATH = "${var.photos_path}"
+            TC_AWS_LOADER_ROOT_PATH = "${var.photos_prefix}"
         }
     }
 }

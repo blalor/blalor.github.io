@@ -18,8 +18,7 @@ data "aws_iam_policy_document" "exec" {
         ]
 
         resources = [
-            ## strip leading / from photos_path, if included
-            "arn:aws:s3:::${var.bucket}/${replace("${var.photos_path}", "/^//", "")}/*"
+            "arn:aws:s3:::${var.bucket}/${var.photos_prefix}/*"
         ]
     }
 
