@@ -67,7 +67,7 @@ jobs:
             ## only build when the thumbor build script or config file has changed
             - restore_cache:
                 keys:
-                    - &THUMBOR_CACHE_KEY v1-dependencies-{{ checksum "thumbor/build.sh" }}-{{ checksum "thumbor/thumbor.conf" }}
+                    - &THUMBOR_CACHE_KEY v1-dependencies-{{ checksum "thumbor/requirements.txt" }}-{{ checksum "thumbor/thumbor.conf" }}
 
             - run:
                 name: package thumbor function

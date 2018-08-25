@@ -6,12 +6,6 @@ basedir="$( cd "$( dirname "${0}" )" && pwd )"
 dist_dir="${basedir}/dist"
 mkdir "${dist_dir}"
 
-upstream_dir=$( mktemp -d )
-source_dir=${upstream_dir}/source
-
-curl -sfSL 'https://github.com/awslabs/serverless-image-handler/archive/6a30bd785999bea6ba9dfb402bf550b2dd8f2f8f.tar.gz' | \
-    tar -xz --strip-components=1 -C "${upstream_dir}"
-
 export VIRTUAL_ENV_DISABLE_PROMPT=true
 
 venv=$( mktemp -d )
@@ -31,11 +25,11 @@ pip_install=(
 ## packages that use `from pip.req import …` fail with pip > 9
 "${pip_install[@]}" --upgrade 'pip >=9,<10'
 
-"${pip_install[@]}" "${source_dir}/image-handler"
-"${pip_install[@]}" -r "${source_dir}/image-handler/requirements.txt"
+"${pip_install[@]}" -r "${basedir}/requirements.txt"
 
 ## replace thumbor config with our own
-cp -f "${basedir}/thumbor.conf" "${target_dir}/image_handler/thumbor.conf"
+target_conf=$( python -c 'import pkg_resources; print pkg_resources.resource_filename("image_handler", "thumbor.conf")' )
+cp -f "${basedir}/thumbor.conf" "${target_conf}"
 
 deactivate
 
