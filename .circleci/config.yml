@@ -24,6 +24,10 @@ jobs:
                     test -n "${STATE_BUCKET:-}"          || fail "STATE_BUCKET not set"
                     test -n "${STATE_BUCKET_REGION:-}"   || fail "STATE_BUCKET_REGION not set"
 
+                    test -n "${TF_VAR_addr_validation_hmac_key:-}" || fail "TF_VAR_addr_validation_hmac_key not set"
+                    test -n "${TF_VAR_git_repo:-}"                 || fail "TF_VAR_git_repo not set"
+                    test -n "${TF_VAR_opencage_api_key:-}"         || fail "TF_VAR_opencage_api_key not set"
+
     build-site:
         docker:
             - image: *RUBY_IMAGE

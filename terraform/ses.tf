@@ -28,6 +28,8 @@ resource "aws_ses_receipt_rule" "pbe" {
         position = 1
         bucket_name = "${aws_s3_bucket.site_bucket.id}"
         object_key_prefix = "${local.emails_prefix}/"
+
+        topic_arn = "${aws_sns_topic.pbe.arn}"
     }
 
     depends_on = [ "aws_s3_bucket_policy.s3_origin_policy" ]

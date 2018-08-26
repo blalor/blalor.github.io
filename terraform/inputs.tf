@@ -21,6 +21,21 @@ variable "aws_region" {
 #     description = "list of hostnames the site will be served under"
 # }
 
+variable "addr_validation_hmac_key" {
+    type = "string"
+    description = "hmac key for validating sender address"
+}
+
+variable "git_repo" {
+    type = "string"
+    description = "https url -- with credentials -- where the jekyll site lives"
+}
+
+variable "opencage_api_key" {
+    type = "string"
+    description = "api key for opencage, for reverse geocoding photo locations"
+}
+
 data "aws_ip_ranges" "cloudfront" {
     services = ["cloudfront"]
 }

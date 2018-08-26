@@ -3,12 +3,15 @@
 ##
 ##   aws --profile personal iam create-user       --user-name circleci-jekyll
 ##   aws --profile personal iam create-access-key --user-name circleci-jekyll
-##   aws --profile personal iam put-user-policy \
-##       --user-name circleci-jekyll \
-##       --policy-name terraform \
-##       --policy-document "$(
-##           yaml2json circleci-jekyll-policy.yaml | sed -e 's#@STATE_BUCKET@#blalor-terraform#g'
-##       )"
+##   policy_doc=$(
+##       yaml2json circleci-jekyll-policy.yaml | sed -e 's#@STATE_BUCKET@#blalor-terraform#g'
+##   )
+##   aws --profile personal iam create-policy --policy-name circleci-jekyll-terraform --policy-document "${policy_doc}"
+##   aws --profile personal iam attach-user-policy --user-name circleci-jekyll --policy-arn arn:aws:iam::…:policy/circleci-jekyll-terraform
+##   aws --profile personal iam create-policy-version \
+##       --policy-arn arn:aws:iam::…:policy/circleci-jekyll-terraform \
+##       --policy-document "${policy_doc}" \
+##       --set-as-default
 
 Version: "2012-10-17"
 Statement:
@@ -125,3 +128,21 @@ Statement:
             - ses:CreateReceiptRule
             - ses:UpdateReceiptRule
             - ses:DescribeReceiptRule
+
+    ## sns
+    -   Sid: sns
+        Effect: Allow
+        Resource:
+            -  arn:aws:sns:*:*:post-by-email-*
+
+        Action:
+            - sns:*
+
+    ## sqs
+    -   Sid: sqs
+        Effect: Allow
+        Resource:
+            -  arn:aws:sqs:*:*:post-by-email-dlq-*
+
+        Action:
+            - sqs:*
