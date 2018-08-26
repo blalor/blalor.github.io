@@ -49,16 +49,27 @@ data "aws_iam_policy_document" "exec" {
 
     ## allow writing photos to s3
     statement {
-        sid = "s3imageaccess"
+        sid = "s3imageput"
 
         actions = [
             "s3:PutObject",
-            "s3:ListBucket",
-            "s3:ListObjects",
         ]
 
         resources = [
             "arn:aws:s3:::${var.s3_image_bucket}/${var.s3_image_path_prefix}/*"
+        ]
+    }
+
+    ## allow listing existing photos in s3
+    statement {
+        sid = "s3imagelist"
+
+        actions = [
+            "s3:ListBucket",
+        ]
+
+        resources = [
+            "arn:aws:s3:::${var.s3_image_bucket}"
         ]
     }
 }
