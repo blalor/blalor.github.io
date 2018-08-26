@@ -166,12 +166,20 @@ workflows:
                     - sanity-check
 
             - terraform:
+                filters:
+                    branches:
+                        only: master
+
                 requires:
                     - sanity-check
                     - package-thumbor
                     - package-post-by-email
 
             - deploy-site:
+                filters:
+                    branches:
+                        only: master
+
                 requires:
                     - build-site
                     - terraform
