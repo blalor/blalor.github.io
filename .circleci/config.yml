@@ -82,6 +82,31 @@ jobs:
                 root: "."
                 paths: thumbor/dist/image-handler.zip
 
+    package-post-by-email:
+        docker:
+            - image: circleci/python:2.7
+
+        steps:
+            - checkout
+
+            ## only build when the thumbor build script or config file has changed
+            - restore_cache:
+                keys:
+                    - &PBE_CACHE_KEY v1-dependencies-{{ checksum "post-by-email/requirements.txt" }}
+
+            - run:
+                name: package post-by-email function
+                command: test -e post-by-email/dist/post-by-email.zip || post-by-email/build.sh
+
+            - save_cache:
+                key: *PBE_CACHE_KEY
+                paths:
+                    - post-by-email/dist
+
+            - persist_to_workspace:
+                root: "."
+                paths: post-by-email/dist/post-by-email.zip
+
     terraform:
         docker:
             - image: hashicorp/terraform:0.11.7
@@ -130,6 +155,7 @@ workflows:
         jobs:
             - sanity-check
             - package-thumbor
+            - package-post-by-email
 
             - build-site:
                 requires:
@@ -139,6 +165,7 @@ workflows:
                 requires:
                     - sanity-check
                     - package-thumbor
+                    - package-post-by-email
 
             - deploy-site:
                 requires:
