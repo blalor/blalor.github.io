@@ -7,7 +7,7 @@ tags:
 - photo
 author: blalor@bravo5.org
 images:
-- path: email/slug/IMG_4514.jpg
+- path: email/2018-08-26-big-meadows/IMG_4514.jpg
   exif:
     cameraMake: Apple
     cameraModel: iPhone X
@@ -25,4 +25,4 @@ Quick trip to Shenandoah for a shamble through the meadow, and a burger.
 
 
 
-
+
