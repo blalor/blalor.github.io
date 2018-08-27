@@ -58,7 +58,12 @@ resource "aws_cloudfront_distribution" "main" {
         cached_methods  = [ "HEAD", "GET" ]
 
         compress = true
-        min_ttl = 600
+
+        min_ttl     = "${1  * 60}"             # 1m
+        default_ttl = "${10 * 60}"             # 10m
+        max_ttl     = "${1  * (24 * 60 * 60)}" # 1d
+
+        ## @todo add longer caching of css, js assets
 
         forwarded_values {
             query_string = false
@@ -76,6 +81,10 @@ resource "aws_cloudfront_distribution" "main" {
 
         allowed_methods = [ "HEAD", "GET" ]
         cached_methods  = [ "HEAD", "GET" ]
+
+        min_ttl     = "${1   * (60 * 60)}"      # 1h
+        default_ttl = "${1   * (24 * 60 * 60)}" # 1d
+        max_ttl     = "${365 * (24 * 60 * 60)}" # 365d
 
         forwarded_values {
             query_string = false
