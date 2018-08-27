@@ -10,7 +10,7 @@ tags:
 - photo
 author: blalor@bravo5.org
 images:
-- path: photos/2018-08-26-moonlight-bike-ride/IMG_4489.jpg
+- path: email/2018-08-26-moonlight-bike-ride/IMG_4489.jpg
   exif:
     cameraMake: Apple
     cameraModel: iPhone X
