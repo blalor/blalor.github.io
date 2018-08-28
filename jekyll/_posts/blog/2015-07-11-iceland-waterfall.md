@@ -17,7 +17,7 @@ images:
     location:
       latitude: 63.53064722222222
       longitude: -19.51302777777778
-      name: Fimmvörðuháls, Skógafoss, Skógar, Southern Region, Iceland
+      name: Skógafoss, Skógar 🇮🇸
 ---
 
 

@@ -19,7 +19,7 @@ images:
     location:
       latitude: 42.35154444444444
       longitude: -71.05082777777777
-      name: Congress Street, Boston MA, United States of America
+      name: 303 Congress Street, Boston, MA 🇺🇸
 ---
 
 I took this quickly on my way home after a few after-work drinks at Lucky's and Drink (where I had a beer to spite the fancy cocktail crowd). I love the Boston skyline at night. 

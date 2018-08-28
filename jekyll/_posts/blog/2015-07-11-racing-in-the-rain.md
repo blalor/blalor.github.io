@@ -17,7 +17,7 @@ images:
     location:
       latitude: 42.235169444444445
       longitude: -72.24558888888889
-      name: Pit Lane, Palmer, Hampden County, Massachusetts, United States of America
+      name: Pit Lane, Palmer, MA 🇺🇸
 ---
 
 

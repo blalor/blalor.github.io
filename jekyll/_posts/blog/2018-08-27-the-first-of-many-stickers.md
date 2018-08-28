@@ -18,7 +18,7 @@ images:
     location:
       latitude: 37.573822222222226
       longitude: -77.48996666666667
-      name: 4471 Cutshaw Avenue, Richmond City, VA 23230, United States of America
+      name: Richmond City, VA 🇺🇸
 ---
 
 Gonna make this a thing. Why not?

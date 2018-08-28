@@ -18,7 +18,7 @@ images:
     location:
       latitude: 38.515880555555555
       longitude: -78.4328388888889
-      name: Skyline Drive, Big Meadows, VA, United States of America
+      name: Skyline Drive, Big Meadows, VA 🇺🇸
 ---
 
 Quick trip to Shenandoah for a shamble through the meadow, and a burger. 

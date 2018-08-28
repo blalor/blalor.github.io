@@ -17,7 +17,7 @@ images:
     location:
       latitude: 42.35926944444444
       longitude: -71.06516944444444
-      name: Pinckney Street, Boston MA, United States of America
+      name: Boston, MA 🇺🇸
 ---
 
 Cory and I ran into Adam during our 3-mile hike to the Posto truck.

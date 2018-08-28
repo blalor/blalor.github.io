@@ -17,7 +17,7 @@ images:
     location:
       latitude: 42.404177777777775
       longitude: -71.10695555555554
-      name: Main St @ Mayberry Ave, Main Street, Medford MA, United States of America
+      name: Medford, MA 🇺🇸
 - path: email/2015-07-11-the-hounds/IMG_5855.JPG
   exif:
     cameraMake: Apple
@@ -28,7 +28,7 @@ images:
     location:
       latitude: 42.404380555555555
       longitude: -71.10717777777778
-      name: Main St @ Marion St, Main Street, Medford MA, United States of America
+      name: Medford, MA 🇺🇸
 ---
 
 

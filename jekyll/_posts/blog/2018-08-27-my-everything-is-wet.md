@@ -18,7 +18,7 @@ images:
     location:
       latitude: 37.573772222222225
       longitude: -77.49005
-      name: 1471 Commonwealth Avenue, Richmond City, VA 23221, United States of America
+      name: Richmond City, VA 🇺🇸
 ---
 
 There was _a_ cloud in the sky when I left for a 10- minute errand. 🏍💦💦💦

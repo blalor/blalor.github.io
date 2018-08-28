@@ -21,8 +21,7 @@ images:
     location:
       latitude: 37.57083888888889
       longitude: -77.464425
-      name: The Diamond, Avenue of Champions, Richmond City, VA 23230, United States
-        of America
+      name: The Diamond, Richmond City, VA 🇺🇸
 ---
 
 
