@@ -142,9 +142,18 @@ jobs:
             - attach_workspace:
                 at: "."
 
+            - restore_cache:
+                keys:
+                    - &AWSCLI_CACHE awscli==1.16.2
+
             - run:
                 name: install dependencies
-                command: pip install awscli --upgrade --user
+                command: pip install awscli==1.16.2 --upgrade --user
+
+            - save_cache:
+                key: *AWSCLI_CACHE
+                paths:
+                    - ~/.local
 
             - run:
                 name: sync site
