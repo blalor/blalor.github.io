@@ -9,6 +9,8 @@ image:
     Photo Credit: Brian Lalor
 ---
 
+<a href="//www.youtube.com/watch?v=pAoZWyLMb6c" data-lity>“Speed has never killed anyone.  Suddenly becoming stationary, that’s what gets you.” - Jeremy Clarkson</a>
+
 I'm heading back to Bonneville and posting pictures as I go.
 
 ## About the Blog
