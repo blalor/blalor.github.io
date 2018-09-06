@@ -3,8 +3,8 @@
 - title: Home
   url: /
 
-- title: Photos
-  url: /photos/
+# - title: Photos
+#   url: /photos/
 
 - title: Authors
   url: /authors/
@@ -14,3 +14,6 @@
 
 - title: Search
   url: /search/
+
+- title: Subscribe
+  url: /subscribe/

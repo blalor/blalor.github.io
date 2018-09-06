@@ -17,4 +17,4 @@ I'm heading back to Bonneville and posting pictures as I go.
 
 * published with [Jekyll](http://jekyllrb.com/)
 * layout based on [So Simple](https://github.com/mmistakes/so-simple-theme)
-* post via email with [tbd]()
+<!-- * post via email with [tbd]() -->
