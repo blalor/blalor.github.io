@@ -4,7 +4,7 @@ resource "aws_lambda_function" "fn" {
     role = "${aws_iam_role.lambda.arn}"
 
     runtime = "python2.7"
-    timeout = 30
+    timeout = 300
 
     s3_bucket = "${module.fingerprinted_bucket_object.bucket}"
     s3_key    = "${module.fingerprinted_bucket_object.object}"
