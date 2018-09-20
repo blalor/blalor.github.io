@@ -1,6 +1,6 @@
 ---
 title: "Flaming Gorge: WY & UT"
-date: '2018-09-19T07:17:59-06:00'
+date: '2018-09-18T20:52:59-06:00'
 layout: post
 categories: blog
 tags:
