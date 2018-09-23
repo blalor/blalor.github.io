@@ -3,7 +3,8 @@ title: "Kansas blows"
 date: '2018-09-20T22:41:17-05:00'
 layout: post
 categories: blog
-tags: []
+tags:
+- summer2018
 author: blalor@bravo5.org
 ---
 

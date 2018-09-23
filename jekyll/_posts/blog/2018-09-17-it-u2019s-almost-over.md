@@ -5,6 +5,7 @@ layout: post
 categories: blog
 tags:
 - photo
+- summer2018
 author: blalor@bravo5.org
 images:
   image2_jpeg:

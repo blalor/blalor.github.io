@@ -3,7 +3,8 @@ title: "This is the way every great road trip starts"
 date: '2018-09-07T20:06:49-04:00'
 layout: post
 categories: blog
-tags: []
+tags:
+- summer2018
 author: blalor@bravo5.org
 images:
     img_4661_gif:
