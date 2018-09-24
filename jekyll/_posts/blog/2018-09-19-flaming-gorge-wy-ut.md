@@ -126,6 +126,8 @@ images:
         latitude: 40.91166944444444
         longitude: -109.41928055555556
         name: "Dutch John, UT \U0001F1FA\U0001F1F8"
+gpx:
+- /assets/gpx/combined-2018-09-18T16:16:46-2018-09-18T22:35:58.gpx
 ---
 
 {% include exif-image.html img=page.images.img_5211_jpg %}
@@ -172,4 +174,4 @@ I’m now in Vernal, UT, which has a fantastic 🦕-kitsch quotient: they’ll g
 
 
 
-
+

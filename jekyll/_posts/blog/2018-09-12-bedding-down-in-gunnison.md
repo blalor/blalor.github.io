@@ -60,6 +60,8 @@ images:
         latitude: 38.49720833333333
         longitude: -106.94502222222222
         name: "V Drop Loop, Gunnison County, CO \U0001F1FA\U0001F1F8"
+gpx:
+- /assets/gpx/combined-2018-09-11T14:48:28-2018-09-12T01:56:47.gpx
 ---
 
 {% include exif-image.html img=page.images.img_4843_jpg %}
@@ -82,4 +84,4 @@ The lodging has been more expensive than I wanted, and I’ve been lugging my ca
 
 
 
-
+

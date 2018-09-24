@@ -55,6 +55,8 @@ images:
     path: email/2018-09-09-it-was-a-wet-one/IMG_4690.JPEG
     exif:
       dateTimeOriginal: '2018-09-08T18:11:46'
+gpx:
+- /assets/gpx/combined-2018-09-08T09:17:22-2018-09-09T00:46:29.gpx
 ---
 
 {% include exif-image.html img=page.images.img_4677_jpeg %}
@@ -79,4 +81,4 @@ images:
 
 
 
-
+

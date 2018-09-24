@@ -84,6 +84,8 @@ images:
         latitude: 39.80796944444444
         longitude: -105.56199444444444
         name: "Yankee HIll, Nevadaville, CO \U0001F1FA\U0001F1F8"
+gpx:
+- /assets/gpx/combined-2018-09-10T19:46:26-2018-09-11T00:10:37.gpx
 ---
 
 {% include exif-image.html img=page.images.img_4762_jpg %}
@@ -124,4 +126,4 @@ I’ll probably keep to the pavement a little more tomorrow, but I can’t wait 
 
 
 
-
+

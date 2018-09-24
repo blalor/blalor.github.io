@@ -60,6 +60,8 @@ images:
         latitude: 38.49731111111111
         longitude: -106.94505277777778
         name: "V Drop Loop, Gunnison County, CO \U0001F1FA\U0001F1F8"
+gpx:
+- /assets/gpx/combined-2018-09-12T15:36:12-2018-09-13T02:01:30.gpx
 ---
 
 {% include exif-image.html img=page.images.img_4860_jpg %}
@@ -80,4 +82,4 @@ Guess I didn’t clean out my pot well enough after the ramen feast last night.
 
 
 
-
+

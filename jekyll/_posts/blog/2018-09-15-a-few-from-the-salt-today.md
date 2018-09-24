@@ -102,6 +102,8 @@ images:
   img_5104_jpg:
     path: email/2018-09-15-a-few-from-the-salt-today/IMG_5104.JPG
     exif: {}
+gpx:
+- /assets/gpx/combined-2018-09-14T14:15:09-2018-09-15T01:01:45.gpx
 ---
 
 {% include exif-image.html img=page.images.img_5074_jpg %}
@@ -138,4 +140,4 @@ Great turnout today, but it was hot hot hot!
 
 
 
-
+

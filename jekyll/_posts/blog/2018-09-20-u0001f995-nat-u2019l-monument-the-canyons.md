@@ -112,6 +112,8 @@ images:
         latitude: 40.47265277777778
         longitude: -109.09728333333332
         name: "Harper's Corner Road, Uintah County, UT \U0001F1FA\U0001F1F8"
+gpx:
+- /assets/gpx/combined-2018-09-19T13:54:39-2018-09-20T01:15:44.gpx
 ---
 
 {% include exif-image.html img=page.images.img_5318_jpg %}
@@ -148,4 +150,4 @@ I’d received a few recommendations to check out the non-fossil part of the mon
 
 
 
-
+

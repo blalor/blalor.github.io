@@ -34,6 +34,8 @@ images:
         latitude: 40.777163888888886
         longitude: -113.84305555555555
         name: "Bonneville Speedway, Salduro, UT \U0001F1FA\U0001F1F8"
+gpx:
+- /assets/gpx/combined-2018-09-15T14:13:20-2018-09-15T20:34:19.gpx
 ---
 
 {% include exif-image.html img=page.images.img_5128_jpg %}
@@ -50,4 +52,4 @@ Yeah, I rode it from Virginia.
 
 
 
-
+

@@ -84,6 +84,8 @@ images:
         latitude: 40.80775555555555
         longitude: -113.82789722222222
         name: "Bonneville Speedway, Salduro, UT \U0001F1FA\U0001F1F8"
+gpx:
+- /assets/gpx/combined-2018-09-16T13:56:50-2018-09-16T22:21:13.gpx
 ---
 
 {% include exif-image.html img=page.images.img_5144_jpg %}
@@ -120,4 +122,4 @@ Thanks to Reia for the photo; to Jonathan, JJ, Augie, Jimmy, Carlos, Sam, Steph,
 
 
 
-
+
