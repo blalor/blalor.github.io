@@ -6,23 +6,25 @@ title: Summer 2018 🏍
 ohai.
 
 <style>
-.fa-icon {color: blue;}
+.fa-divicon {color: red;}
 </style>
 
 
 <script type="text/javascript">
     (function(_map) {
+        var gasIcon = L.divIcon({
+            className: "fa-divicon",
+            // fa-gas-pump is in 5.0.13, we're using 5.0.12 :-(
+            html: '<i class="fas fa-battery-quarter fa-lg"></i>',
+            // iconSize: [40, 40]
+        });
+        
         getJSON("/assets/fuel_report.json", function(data) {
             var fuelData = L.geoJSON(data, {
                 onEachFeature: popUp,
                 pointToLayer: function(pt, latlng) {
                     return L.marker(latlng, {
-                        icon: L.divIcon({
-                            className: "fa-icon",
-                            // fa-gas-pump is in 5.0.13, we're using 5.0.12 :-(
-                            html: '<i class="fas fa-battery-quarter"></i>',
-                            // iconSize: [40, 40]
-                        })
+                        icon: gasIcon
                     });
                 }
             });
