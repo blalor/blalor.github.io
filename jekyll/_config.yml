@@ -17,7 +17,9 @@ mapbox_token: pk.eyJ1IjoiYmxhbG9yIiwiYSI6ImNqbWYxcWY3aTA0Ym4zcHFwY25oZXNram4ifQ.
 ## maps to _data/authors.yaml
 author: blalor@bravo5.org
 
-permalink: /:categories/:year-:month-:day-:title.html
+# ".html" instead of ":output_ext" causes page permalinks to lose their extension
+permalink: /:categories/:year-:month-:day-:title:output_ext
+
 #category_archive_path: "/categories/#"
 tag_archive_path: "/tags/#"
 
