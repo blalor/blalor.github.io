@@ -2,6 +2,7 @@ title: "αβ"
 locale: en-US
 description: Bonneville or Bust
 timezone: "America/New_York"
+date_format: "%b %-d, %Y at %I:%M%P"
 
 # the base hostname & protocol for your site, e.g. http://example.com
 url: https://beta5.org
