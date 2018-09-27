@@ -4,7 +4,7 @@ layout: page
 map_var: layoutMap
 ---
 
-<div id="map" style="height: 500px;"></div>
+<div id="map" style="height: {{ page.map_height | default: '500px' }};"></div>
 
 <script type="text/javascript">
 var _map = {{ layout.map_var }} = L.map("map");
