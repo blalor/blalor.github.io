@@ -4,11 +4,18 @@ description: Bonneville or Bust
 timezone: "America/New_York"
 date_format: "%b %-d, %Y at %I:%M%P"
 
+strict_front_matter: true
+
+# https://jekyllrb.com/docs/configuration/liquid/
+error_mode: strict
+strict_variables: true
+strict_filters: true
+
 # the base hostname & protocol for your site, e.g. http://example.com
 url: https://beta5.org
 
 # the subpath of your site, e.g. /blog
-baseurl: "/"
+# baseurl: "/"
 
 static_images_base_url: https://beta5.org/photos
 
