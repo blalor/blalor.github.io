@@ -32,7 +32,7 @@ The posts below (and the map above) are a log of the trip as I went.
             // iconSize: [40, 40]
         });
         
-        getJSON("/assets/fuel_report.json", function(data) {
+        getJSON("/assets/geojson/fuel_report.json", function(data) {
             var fuelData = L.geoJSON(data, {
                 onEachFeature: popUp,
                 pointToLayer: function(pt, latlng) {
