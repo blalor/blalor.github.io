@@ -34,3 +34,9 @@ theme: jekyll-theme-so-simple
 
 plugins:
   - jekyll-feed
+
+excerpt_separator: "<!--more-->"
+
+collections:
+    trips:
+        output: true

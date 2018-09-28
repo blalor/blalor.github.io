@@ -1,5 +1,7 @@
 ---
 title: Summer 2018 🏍
+date: 2018-09-08
+
 layout: map
 map_height: 400px
 tag: summer2018
@@ -8,6 +10,7 @@ show_excerpts: false
 
 From September 8th through the 21st I rode from Virginia to the Bonneville Salt
 Flats in Utah for the 32nd annual World of Speed on my 2017 Honda Africa Twin.
+<!--more-->
 The posts below (and the map above) are a log of the trip as I went.
 
 <div class="entries-{{ page.entries_layout | default: 'list' }}">
