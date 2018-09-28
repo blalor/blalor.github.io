@@ -19,10 +19,6 @@ The posts below (and the map above) are a log of the trip as I went.
     {% endfor %}
 </div>
 
-<style>
-.fa-divicon {color: red;}
-</style>
-
 <script type="text/javascript">
     (function(_map) {
         var gasIcon = L.divIcon({
@@ -40,7 +36,6 @@ The posts below (and the map above) are a log of the trip as I went.
                 }
             });
 
-            // _map.fitBounds(fuelData.getBounds());
             fuelData.addTo(_map);
         });
 
@@ -77,18 +72,14 @@ The posts below (and the map above) are a log of the trip as I went.
         {% for post in site.tags[page.tag] -%}
             {%- for img in post.images -%}
                 {%- if img[1].exif.location %}
-        addPhoto(
-            {{ img[1] | jsonify }},
-            "{{ post.url | relative_url }}",
-            "{{ post.title }}",
-        );
+        addPhoto({{ img[1] | jsonify }}, "{{ post.url | relative_url }}", "{{ post.title }}");
                 {%- endif -%}
             {%- endfor -%}
             
             {%- for gpx in post.gpx %}
         loadGpx("{{ gpx }}", _map);
             {%- endfor =%}
-        {%- endfor -%}
+        {%- endfor %}
 
         photoGroup.addTo(_map);
         _map.fitBounds(photoGroup.getBounds());

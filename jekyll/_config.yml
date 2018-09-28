@@ -21,6 +21,10 @@ static_images_base_url: https://beta5.org/photos
 
 mapbox_token: pk.eyJ1IjoiYmxhbG9yIiwiYSI6ImNqbWYxcWY3aTA0Ym4zcHFwY25oZXNram4ifQ.j2IzyVihJU3nzKFvBBBMBQ
 
+## these are included _before_ head-custom.html…
+head_scripts:
+    - /assets/js/map-util.js
+
 ## maps to _data/authors.yaml
 author: blalor@bravo5.org
 
