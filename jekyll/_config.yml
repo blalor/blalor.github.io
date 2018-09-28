@@ -37,7 +37,8 @@ tag_archive_path: "/tags/#"
 theme: jekyll-theme-so-simple
 
 plugins:
-  - jekyll-feed
+    - jekyll-feed
+    - jekyll-redirect-from
 
 excerpt_separator: "<!--more-->"
 
