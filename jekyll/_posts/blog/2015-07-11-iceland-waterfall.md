@@ -21,6 +21,6 @@ images:
         name: "Skógafoss, Skógar \U0001F1EE\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.15725895949_32dcce7cba_o_jpg %}
-
 I’m a huge fan of waterfalls.
+
+{% include exif-image.html img=page.images.15725895949_32dcce7cba_o_jpg %}

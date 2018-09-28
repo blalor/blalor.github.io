@@ -91,11 +91,12 @@ images:
         name: "Virginia Beach, VA \U0001F1FA\U0001F1F8"
 ---
 
+
+We took a day trip out to Virginia Beach, our first trip to the sand this year. I’ve never seen a beach so densely packed with people. We walked north along the water for about a mile and when we turned back these awesome cumulus clouds had grown up out of nowhere. By the time we got back where we started the lifeguards had called everyone out of the water and off the beach, and the clouds had gotten loud. The leading edge of one of the bigger cus had a rainbow in the mist, the first time I’ve ever seen that. We got beer and tacos and waited for the rain, but it never showed. We were greeted by another big pop-up storm over Richmond when we got home, and it brought its friends. 
+
 {% include exif-image.html img=page.images.img_4552_jpg %}
 {% include exif-image.html img=page.images.img_3_jpg %}
 {% include exif-image.html img=page.images.img_4558_jpg %}
 {% include exif-image.html img=page.images.img_4564_jpg %}
 {% include exif-image.html img=page.images.img_4576_jpg %}
 {% include exif-image.html img=page.images.img_4580_jpg %}
-
-We took a day trip out to Virginia Beach, our first trip to the sand this year. I’ve never seen a beach so densely packed with people. We walked north along the water for about a mile and when we turned back these awesome cumulus clouds had grown up out of nowhere. By the time we got back where we started the lifeguards had called everyone out of the water and off the beach, and the clouds had gotten loud. The leading edge of one of the bigger cus had a rainbow in the mist, the first time I’ve ever seen that. We got beer and tacos and waited for the rain, but it never showed. We were greeted by another big pop-up storm over Richmond when we got home, and it brought its friends. 

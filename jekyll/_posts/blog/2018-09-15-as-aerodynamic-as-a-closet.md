@@ -38,18 +38,11 @@ gpx:
 - /assets/gpx/combined-2018-09-15T14:13:20-2018-09-15T20:34:19.gpx
 ---
 
-{% include exif-image.html img=page.images.img_5128_jpg %}
-{% include exif-image.html img=page.images.img_5129_jpg %}
-
 I only got one run in today before racing was put on hold due to the wind (and I suspect it’s done for the day). My GPS and the timing slip agree, which is nice. I was at 117 in 5th gear but not accelerating much, and lost 1mph after shifting into 6th. I have a few bits to remove to try to make the closet — I mean bike — a little more sleek. And I have a -1 tooth front sprocket that I’ll put on to attempt to make 6th usable, but I really don’t think anything will make up that 13mph difference. That’s ok, though. It’s still something to have gotten it out there, and the reactions have been awesome. 
 
-<double take> “Wait, you’re racing _that_?”
-Yeah, I rode it from Virginia. 
-<double take> “Virginia?!”
+**double take** “Wait, you’re racing _that_?”  
+Yeah, I rode it from Virginia.  
+**double take** “Virginia?!”  
 
-
-
-
-
-
-
+{% include exif-image.html img=page.images.img_5128_jpg %}
+{% include exif-image.html img=page.images.img_5129_jpg %}

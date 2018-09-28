@@ -114,15 +114,6 @@ images:
         name: "Bonneville Speedway, Salduro, UT \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_5168_jpg %}
-{% include exif-image.html img=page.images.img_5171_jpg %}
-{% include exif-image.html img=page.images.img_5174_jpg %}
-{% include exif-image.html img=page.images.img_5176_jpg %}
-{% include exif-image.html img=page.images.img_5181_jpg %}
-{% include exif-image.html img=page.images.img_5183_jpg %}
-{% include exif-image.html img=page.images.img_5192_jpg %}
-{% include exif-image.html img=page.images.img_5194_jpg %}
-
 All good things must come to an end, or do they say. Today was a short one at Bonneville, with racing wrapping up around noon. I got there at 7:30 with the hope of knocking out my two remaining runs quickly, but the LSR folks (Land Speed Racing, as opposed to the less stringent club folks such as myself) took priority. I finally got to run about 9:30, but the timing lights malfunctioned (something the staff was struggling with a bit this year) and my pass didn’t register. But aside from getting a do-over I know from my GPS that I was 1mph faster than the misfired one. My final two passes were at 120.86411 and 120.85874, and I think that’s really all she’ll do! 
 
 It took me a little while to return the bike to non-racing trim. By the time I boxed up my leathers (thanks Dave and Stephanie), put the regular sprocket back on (thanks Vacationing Overlander Québécois Guy for the ratchet), reattached the mirrors and windscreen, and loaded all my gear back on, it was about 12:30. I went back into Wendover to get gas, a bite to eat, and grab a picture of Wendover Will. As I was leaving Will behind I saw the Citation X11 on a trailer and turned around to talk to the owner: he improved his best speed from 139 to 145, pretty good for a nearly 40-year-old econobox. 
@@ -131,27 +122,11 @@ Among the pictures here you should be able to see the abandoned passenger seat, 
 
 That’s it for World of Speed 2018. I’m really looking forward to going back next year, with at least one different bike. 😁
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% include exif-image.html img=page.images.img_5168_jpg %}
+{% include exif-image.html img=page.images.img_5171_jpg %}
+{% include exif-image.html img=page.images.img_5174_jpg %}
+{% include exif-image.html img=page.images.img_5176_jpg %}
+{% include exif-image.html img=page.images.img_5181_jpg %}
+{% include exif-image.html img=page.images.img_5183_jpg %}
+{% include exif-image.html img=page.images.img_5192_jpg %}
+{% include exif-image.html img=page.images.img_5194_jpg %}

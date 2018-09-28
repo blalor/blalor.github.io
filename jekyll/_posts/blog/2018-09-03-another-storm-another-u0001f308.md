@@ -22,6 +22,6 @@ images:
         name: "Monument Avenue, Richmond City, VA \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_4606_jpg %}
-
 It’s rained daily for months, now. 
+
+{% include exif-image.html img=page.images.img_4606_jpg %}

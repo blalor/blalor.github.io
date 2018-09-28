@@ -22,6 +22,6 @@ images:
         name: "Richmond City, VA \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_4522_jpg %}
-
 There was _a_ cloud in the sky when I left for a 10- minute errand. 🏍💦💦💦
+
+{% include exif-image.html img=page.images.img_4522_jpg %}

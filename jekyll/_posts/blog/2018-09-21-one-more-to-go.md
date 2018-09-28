@@ -25,10 +25,6 @@ gpx:
 - /assets/gpx/combined-2018-09-21T11:17:21-2018-09-22T01:03:03.gpx
 ---
 
-{% include exif-image.html img=page.images.img_5352_jpg %}
-
 I think I can, I think I can…
 
-
-
-
+{% include exif-image.html img=page.images.img_5352_jpg %}

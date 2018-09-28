@@ -88,14 +88,6 @@ gpx:
 - /assets/gpx/combined-2018-09-16T13:56:50-2018-09-16T22:21:13.gpx
 ---
 
-{% include exif-image.html img=page.images.img_5144_jpg %}
-{% include exif-image.html img=page.images.img_5150_jpg %}
-{% include exif-image.html img=page.images.img_5154_jpg %}
-{% include exif-image.html img=page.images.img_5160_jpg %}
-{% include exif-image.html img=page.images.img_5162_jpg %}
-{% include exif-image.html img=page.images.img_5164_jpg %}
-{% include exif-image.html img=page.images.image2_jpeg %}
-
 Today was the last full day of racing. The line for the 130 club was longer than any other: that’s great for the organization, and a little frustrating for those of us in it (it took 3+ hours to get in each of my two runs). But I spent the downtime chatting with my fellow racers, and they’re a fun bunch. 
 
 My first run today was 118.7mph with zero wind, a touch faster than yesterday. I removed the wind deflectors for the hand guards and the top box. With all the time I had before the next one I swapped to a -1 tooth sprocket and removed the windscreen. The result: 118.8. But there was a 9mph headwind. The bike definitely pulled harder all the way through 5th gear and into 6th.
@@ -104,22 +96,10 @@ I have two runs left tomorrow and my plan is to be on the salt at 7:30am to make
 
 Thanks to Reia for the photo; to Jonathan, JJ, Augie, Jimmy, Carlos, Sam, Steph, and Dave for keeping me entertained; and to the folks from San Jose BMW for the tool loan. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% include exif-image.html img=page.images.img_5144_jpg %}
+{% include exif-image.html img=page.images.img_5150_jpg %}
+{% include exif-image.html img=page.images.img_5154_jpg %}
+{% include exif-image.html img=page.images.img_5160_jpg %}
+{% include exif-image.html img=page.images.img_5162_jpg %}
+{% include exif-image.html img=page.images.img_5164_jpg %}
+{% include exif-image.html img=page.images.image2_jpeg %}

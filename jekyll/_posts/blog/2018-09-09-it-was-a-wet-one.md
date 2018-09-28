@@ -59,26 +59,10 @@ gpx:
 - /assets/gpx/combined-2018-09-08T09:17:22-2018-09-09T00:46:29.gpx
 ---
 
+“Ok, Thanks”. I mean, what else do you do with that? I was making great time until I hit whatever hurricane wandered into southern Indiana. I pulled off in Ferdinand for over an hour when I couldn’t see the highway anymore, and again in Lynnville - about 5 miles further on - when the cell I thought had gone past … hadn’t. At least the rain washed off the Salt-Away I meticulously applied a couple of days ago. 
+
 {% include exif-image.html img=page.images.img_4677_jpeg %}
 {% include exif-image.html img=page.images.img_4690_jpeg %}
 {% include exif-image.html img=page.images.img_4681_jpg %}
 {% include exif-image.html img=page.images.img_4683_jpg %}
 {% include exif-image.html img=page.images.img_4686_jpg %}
-
-“Ok, Thanks”. I mean, what else do you do with that? I was making great time until I hit whatever hurricane wandered into southern Indiana. I pulled off in Ferdinand for over an hour when I couldn’t see the highway anymore, and again in Lynnville - about 5 miles further on - when the cell I thought had gone past … hadn’t. At least the rain washed off the Salt-Away I meticulously applied a couple of days ago. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -88,34 +88,15 @@ images:
         name: "Clear Creek County, Clear Creek County, CO \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_4805_jpg %}
-{% include exif-image.html img=page.images.img_4810_jpg %}
-{% include exif-image.html img=page.images.img_4811_jpg %}
-{% include exif-image.html img=page.images.img_4814_jpg %}
-{% include exif-image.html img=page.images.img_4820_jpg %}
-{% include exif-image.html img=page.images.img_4821_jpg %}
-
 After Mt Evans I headed back down into Idaho Springs and jumped over to Georgetown via I-70. I must have loaded the bike poorly today because the front end was really unsteady: it followed every rut, seam, and tar snake. I had a bit of that on the first 800mi day to St Louis, but it was better after moving a few heavy things lower from the seat bag to the saddle bags. Wind doesn’t help, either, and today was GUS-TY. It didn’t feel unsafe, but wasn’t comfortable, either. 
 
 Anyway, from Georgetown I took Guanella Pass Rd south to 285. I’d never heard of the pass or the road (great job I did with all that research, right?) but it went in the right direction and looked properly twisty and mountain-y. I’d waved to a couple on a Tiger and we passed each other when stopping to take photos. I pulled up next to them at the summit and we chatted bikes for quite a while. Then another couple guys - one on a Harley and the other on an F650 - joined us. The AT gets a lot of attention, which kind of surprises me, but I do like it. It probably helps that it’s obviously not been pampered. The pillion rider took the photo of me, after being coached on composition by Mr F650, who is “in media” per the Harley dude. It was a fun impromptu biker gathering, and not the first of the trip. It seems we like talking bikes as much as riding them. 
 
 I must have put on and taken off my down jacket 6 times today and each time I was at the perfect temperature until I wasn’t. I saw low 80s and upper 50s, bright sun and rain. Usually the rain accompanied the colder temps, of course. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% include exif-image.html img=page.images.img_4805_jpg %}
+{% include exif-image.html img=page.images.img_4810_jpg %}
+{% include exif-image.html img=page.images.img_4811_jpg %}
+{% include exif-image.html img=page.images.img_4814_jpg %}
+{% include exif-image.html img=page.images.img_4820_jpg %}
+{% include exif-image.html img=page.images.img_4821_jpg %}

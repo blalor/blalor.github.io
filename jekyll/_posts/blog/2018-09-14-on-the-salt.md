@@ -49,18 +49,8 @@ images:
         name: "Salduro, UT \U0001F1FA\U0001F1F8"
 ---
 
+I’m just in time for the drivers’ meeting and behind a couple guys wearing shirts from our first trip out. 
+
 {% include exif-image.html img=page.images.img_5021_jpg %}
 {% include exif-image.html img=page.images.img_5023_jpg %}
 {% include exif-image.html img=page.images.img_5024_jpg %}
-
-I’m just in time for the drivers’ meeting and behind a couple guys wearing shirts from our first trip out. 
-
-
-
-
-
-
-
-
-
-

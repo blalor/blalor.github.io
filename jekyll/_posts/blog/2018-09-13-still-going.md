@@ -23,10 +23,6 @@ images:
         name: "Lujane, CO \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_4958_jpg %}
-
 Long day yesterday and no service in Black Canyon National Park where I camped last night. Today’s destination is Wendover, UT and the Bonneville salt flats (and a bed, and a shower). There is SO MUCH more to see in Colorado, another trip is warranted. But I’m afraid today will be mostly interstate. The altitude, dry air, and high temps (plus 5 straight days in the saddle) are taking their toll. 
 
-
-
-
+{% include exif-image.html img=page.images.img_4958_jpg %}

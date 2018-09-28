@@ -116,6 +116,8 @@ gpx:
 - /assets/gpx/combined-2018-09-19T13:54:39-2018-09-20T01:15:44.gpx
 ---
 
+I’d received a few recommendations to check out the non-fossil part of the monument, particularly Yampa Bench Road, which runs about 50 miles east from the Utah border and apparently has amazing views down into the Yampa River. I had some trepidations about getting that far off the beaten path, somewhat bolstered by conversations with some other riders and a ranger. Ultimately I just didn’t have time: the quarry took a bit longer than expected (the theme for this trip, apparently) and I needed to start heading East and home. I did go down the tight, switchback-y Echo Park Road and into Echo Park proper, where the Green and Yampa rivers come together at Steamboat Rock. The water was fairly low (the drought out here is no joke), but I was able to wade out onto the rocks and listen to the river gurgle. It was so peaceful. There’s a primitive campground down there, and if I’d planned better I would have loved to stay there for at least a night. Next time. There are also some petroglyphs on one of the walls; a photo in this post will show them if you zoom in. 
+
 {% include exif-image.html img=page.images.img_5318_jpg %}
 {% include exif-image.html img=page.images.img_5320_jpg %}
 {% include exif-image.html img=page.images.img_5323_jpg %}
@@ -124,30 +126,3 @@ gpx:
 {% include exif-image.html img=page.images.img_5336_jpg %}
 {% include exif-image.html img=page.images.img_5337_jpg %}
 {% include exif-image.html img=page.images.img_5341_jpg %}
-
-I’d received a few recommendations to check out the non-fossil part of the monument, particularly Yampa Bench Road, which runs about 50 miles east from the Utah border and apparently has amazing views down into the Yampa River. I had some trepidations about getting that far off the beaten path, somewhat bolstered by conversations with some other riders and a ranger. Ultimately I just didn’t have time: the quarry took a bit longer than expected (the theme for this trip, apparently) and I needed to start heading East and home. I did go down the tight, switchback-y Echo Park Road and into Echo Park proper, where the Green and Yampa rivers come together at Steamboat Rock. The water was fairly low (the drought out here is no joke), but I was able to wade out onto the rocks and listen to the river gurgle. It was so peaceful. There’s a primitive campground down there, and if I’d planned better I would have loved to stay there for at least a night. Next time. There are also some petroglyphs on one of the walls; a photo in this post will show them if you zoom in. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

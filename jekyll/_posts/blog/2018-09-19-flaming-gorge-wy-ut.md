@@ -130,6 +130,14 @@ gpx:
 - /assets/gpx/combined-2018-09-18T16:16:46-2018-09-18T22:35:58.gpx
 ---
 
+Today was fairly short, only about 5 hours, from Rock Springs, WY to Vernal, UT through Flaming Gorge. I was fairly unimpressed (or jaded, if you will) for the first 45 minutes down 530 toward Manila: the landscape is postcard Wyoming, big and flat with hints of awesome, but always in the distance. Then the road starts to drop into the canyons and it’s awe-inspiring. But that’s pretty much when I entered Utah. See yesterday’s commentary on the scenery changing at the state lines. 
+
+The Green River is dammed behind the Flaming Gorge Dam and I’m guessing the signs of the drought are further upstream because the river looked full and high and healthy all the way to the dam. I tried to find some promising overlooks using a topo map before I left and I mostly succeeded. The winner was Red Canyon Overlook, which is completely innocuous from Rt 44: you’d never know what a view you could have without that research because the signs say nothing of it, even though there’s a seasonal visitor center there. The bummer was a dirt track I took, marked by a sign for the landfill, that turned sandy about a mile from the main road. It wasn’t long before I wiped out and ended up with the bike on top of my right ankle. Have I mentioned how much I live my Sidi Adventure 2 boots? They squeak, but they’re tough. I extricated myself by removing one of the bags, stood the bike back up, dropped both saddle bags on the side of the trail and kept going. Then the sand got _deep_ and I bailed, frustrated. I really need to build some skill on a smaller (or at least lighter) bike. 
+
+The rest of the ride was easy, twisty and scenic, without much traffic. I’d hoped for a tour of the dam, but their elevator was broken. They were still doing walking tours along the tip filled with “fun facts”, but I mostly wanted to ogle the machinery. Facts don’t really stick with me. 
+
+I’m now in Vernal, UT, which has a fantastic 🦕-kitsch quotient: they’ll get their own post. I’m staying at an Airbnb tonight because I really am pooped and wanted a good meal (hard to find in Wendover) and a beer. Tomorrow I’ll explore Dinosaur National Monument and start making my way toward Denver, preparing for the long blast back home. 
+
 {% include exif-image.html img=page.images.img_5211_jpg %}
 {% include exif-image.html img=page.images.img_5223_jpg %}
 {% include exif-image.html img=page.images.img_5225_jpg %}
@@ -139,39 +147,3 @@ gpx:
 {% include exif-image.html img=page.images.img_5245_jpg %}
 {% include exif-image.html img=page.images.img_5255_jpg %}
 {% include exif-image.html img=page.images.img_5261_jpg %}
-
-Today was fairly short, only about 5 hours, from Rock Springs, WY to Vernal, UT through Flaming Gorge. I was fairly unimpressed (or jaded, if you will) for the first 45 minutes down 530 toward Manila: the landscape is postcard Wyoming, big and flat with hints of awesome, but always in the distance. Then the road starts to drop into the canyons and it’s awe-inspiring. But that’s pretty much when I entered Utah. See yesterday’s commentary on the scenery changing at the state lines. 
-
-The Green River is dammed behind the Flaming Gorge Dam and I’m guessing the signs of the drought are further upstream because the river looked full and high and healthy all the way to the dam. I tried to find some promising overlooks using a topo map before I left and I mostly succeeded. The winner was Red Canyon Overlook, which is completely innocuous from Rt 44: you’d never know what a view you could have without that research because the signs say nothing of it, even though there’s a seasonal visitor center there. The bummer was a dirt track I took, marked by a sign for the landfill, that turned sandy about a mile from the main road. It wasn’t long before I wiped out and ended up with the bike on top of my right ankle. Have I mentioned how much I live my Sidi Adventure 2 boots? They squeak, but they’re tough. I extricated myself by removing one of the bags, stood the bike back up, dropped both saddle bags on the side of the trail and kept going. Then the sand got _deep_ and I bailed, frustrated. I really need to build some skill on a smaller (or at least lighter) bike. 
-
-The rest of the ride was easy, twisty and scenic, without much traffic. I’d hoped for a tour of the dam, but their elevator was broken. They were still doing walking tours along the tip filled with “fun facts”, but I mostly wanted to ogle the machinery. Facts don’t really stick with me. 
-
-I’m now in Vernal, UT, which has a fantastic 🦕-kitsch quotient: they’ll get their own post. I’m staying at an Airbnb tonight because I really am pooped and wanted a good meal (hard to find in Wendover) and a beer. Tomorrow I’ll explore Dinosaur National Monument and start making my way toward Denver, preparing for the long blast back home. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

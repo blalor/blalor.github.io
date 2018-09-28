@@ -64,24 +64,11 @@ gpx:
 - /assets/gpx/combined-2018-09-11T14:48:28-2018-09-12T01:56:47.gpx
 ---
 
-{% include exif-image.html img=page.images.img_4843_jpg %}
-{% include exif-image.html img=page.images.img_4845_jpg %}
-{% include exif-image.html img=page.images.img_4848_jpg %}
-{% include exif-image.html img=page.images.img_4854_jpg %}
-
 After all the rugged terrain from the last couple of days it was sort of a shock to pop out into a huge, flat valley south of Jefferson. There is all manner of geography here, and sometimes they run into each other. The flat land continued through Buena Vista (where I removed a layer) and gave way to another mountain pass on 50 west of Salida (where it was cold and wet and I wished for that layer again). 
 
 The lodging has been more expensive than I wanted, and I’ve been lugging my camping gear for 2,000 miles, so it was time to sleep under the stars. Freecampsites.net turned up Hartman Rocks recreation area, a BLM-managed area mostly for mountain bikers, but it seems pretty much anything goes. There are a few dozen primitive campsites here, and mine is on a ridge overlooking the valley to the east. I’m looking forward to the sunrise. 
 
-
-
-
-
-
-
-
-
-
-
-
-
+{% include exif-image.html img=page.images.img_4843_jpg %}
+{% include exif-image.html img=page.images.img_4845_jpg %}
+{% include exif-image.html img=page.images.img_4848_jpg %}
+{% include exif-image.html img=page.images.img_4854_jpg %}

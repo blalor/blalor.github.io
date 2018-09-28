@@ -106,6 +106,8 @@ gpx:
 - /assets/gpx/combined-2018-09-14T14:15:09-2018-09-15T01:01:45.gpx
 ---
 
+Great turnout today, but it was hot hot hot!
+
 {% include exif-image.html img=page.images.img_5074_jpg %}
 {% include exif-image.html img=page.images.img_5083_jpg %}
 {% include exif-image.html img=page.images.img_5054_jpg %}
@@ -114,30 +116,3 @@ gpx:
 {% include exif-image.html img=page.images.img_5089_jpg %}
 {% include exif-image.html img=page.images.img_5104_jpg %}
 {% include exif-image.html img=page.images.img_5079_jpg %}
-
-Great turnout today, but it was hot hot hot!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

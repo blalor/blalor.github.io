@@ -22,6 +22,6 @@ images:
         name: "Bonneville Speedway, Salduro, UT \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_2104_jpg %}
-
 I’m looking forward to seeing this landscape again. 🏍💨
+
+{% include exif-image.html img=page.images.img_2104_jpg %}

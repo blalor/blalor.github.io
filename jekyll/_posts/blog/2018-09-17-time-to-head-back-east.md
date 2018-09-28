@@ -24,8 +24,3 @@ images:
 ---
 
 {% include exif-image.html img=page.images.img_5195_jpg %}
-
-
-
-
-

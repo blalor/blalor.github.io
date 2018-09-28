@@ -49,18 +49,8 @@ images:
         name: "Colorado Boulevard, Idaho Springs, CO \U0001F1FA\U0001F1F8"
 ---
 
+A Steve Canyon statue in Idaho Springs, CO; a rock painted like a pig with plastic flowers nearby; and a cow that weighs nearly as much as my bike. I love this stuff.  
+
 {% include exif-image.html img=page.images.img_4750_jpg %}
 {% include exif-image.html img=page.images.img_4689_jpg %}
 {% include exif-image.html img=page.images.img_4768_jpg %}
-
-A Steve Canyon statue in Idaho Springs, CO; a rock painted like a pig with plastic flowers nearby; and a cow that weighs nearly as much as my bike. I love this stuff.  
-
-
-
-
-
-
-
-
-
-

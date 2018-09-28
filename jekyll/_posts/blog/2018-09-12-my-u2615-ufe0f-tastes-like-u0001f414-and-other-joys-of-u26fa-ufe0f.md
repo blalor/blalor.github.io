@@ -64,22 +64,9 @@ gpx:
 - /assets/gpx/combined-2018-09-12T15:36:12-2018-09-13T02:01:30.gpx
 ---
 
+Guess I didn’t clean out my pot well enough after the ramen feast last night. 
+
 {% include exif-image.html img=page.images.img_4860_jpg %}
 {% include exif-image.html img=page.images.img_4861_jpg %}
 {% include exif-image.html img=page.images.img_4862_jpg %}
 {% include exif-image.html img=page.images.img_4865_jpg %}
-
-Guess I didn’t clean out my pot well enough after the ramen feast last night. 
-
-
-
-
-
-
-
-
-
-
-
-
-

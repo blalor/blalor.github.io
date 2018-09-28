@@ -17,22 +17,10 @@ images:
         path: email/2018-09-08-this-is-the-way-every-great-road-trip-starts/IMG_4664.GIF
 ---
 
+
+The rain and I are going to become good friends after tomorrow. 
+
 {% include exif-image.html img=page.images.img_4661_gif %}
 {% include exif-image.html img=page.images.img_4662_gif %}
 {% include exif-image.html img=page.images.img_4663_gif %}
 {% include exif-image.html img=page.images.img_4664_gif %}
-
-The rain and I are going to become good friends after tomorrow. 
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -49,20 +49,10 @@ images:
         name: "Denver, CO \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_4720_jpg %}
-{% include exif-image.html img=page.images.img_4713_jpg %}
-{% include exif-image.html img=page.images.img_4725_jpg %}
-
 Lyndon Poskitt, Eva Hakansson, and now me. But my sponsorship application must have gotten lost in the mail. 
 
 Woody’s is a cool place, known (in some circles) for their bomb-proof spoked wheels. But they also mount tires for us plebes. Nice folks, and I was out the door earlier than expected. I’ve now got a new set of V-rated Pirelli MT90s which have already proven themselves in sandy and rocky terrain. But more on that later…
 
-
-
-
-
-
-
-
-
-
+{% include exif-image.html img=page.images.img_4720_jpg %}
+{% include exif-image.html img=page.images.img_4713_jpg %}
+{% include exif-image.html img=page.images.img_4725_jpg %}

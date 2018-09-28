@@ -23,6 +23,6 @@ images:
         name: "303 Congress Street, Boston, MA \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_5973_jpg %}
-
 I took this quickly on my way home after a few after-work drinks at Lucky's and Drink (where I had a beer to spite the fancy cocktail crowd). I love the Boston skyline at night. 
+
+{% include exif-image.html img=page.images.img_5973_jpg %}

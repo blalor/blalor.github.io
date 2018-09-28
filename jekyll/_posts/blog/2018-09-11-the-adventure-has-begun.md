@@ -88,13 +88,6 @@ gpx:
 - /assets/gpx/combined-2018-09-10T19:46:26-2018-09-11T00:10:37.gpx
 ---
 
-{% include exif-image.html img=page.images.img_4762_jpg %}
-{% include exif-image.html img=page.images.img_4734_jpg %}
-{% include exif-image.html img=page.images.img_4736_jpg %}
-{% include exif-image.html img=page.images.img_4737_jpg %}
-{% include exif-image.html img=page.images.img_4738_jpg %}
-{% include exif-image.html img=page.images.img_4740_jpg %}
-
 I got a bit of a wake-up call today. I heard about St. Mary’s Glacier from Joe at Woody’s, and I’d decided to stay in Idaho Springs already, so with an extra hour to kill it seemed natural to pay it a visit. I followed my GPS out of Denver, past Red Rocks, up Rt. 74 through Evergreen, and through the densest concentration of casinos I’ve seen this side of Vegas, in Central City (right near Nevadaville; how ironic). Once past the casinos you pass through what looks like the old town, and then suddenly the road turns to dirt, and shortly later it’s a rutted sandy ATV trail. But hey, I’m on an ADV bike with fresh ADV tires! Let’s adventure already!  The trail got pretty rocky, and then abruptly turned into a mini hill-climb with some pretty big obstacles. I’m … not very good off-road, and the bike’s got the scars to prove it. I got almost to the top and faltered negotiating around a boulder and toppled over. The AT is probably 600lbs or more with all the bags and fuel: once it starts going, there’s not much I can do to stop it. This time it was leaning uphill and pretty easy to right; I got moving again and popped out into a clearing with some nicely maintained dirt roads. Easy. Let’s keep going. 
 
 From there the GPS suggested a closed trail, and the next alternative turned out to be a rough, rocky, sandy track with lots of exposed mountain poking out: Woodpecker Gulch, which becomes Hamlin Gulch. The skid plate earned its keep. About ¾ths of a mile later the trail forked and I went right, but found a gate a short while later, near a hunting cabin with a couple of early-90s cars abandoned in the yard. I was on private land. I turned around (awkwardly), hoped I hadn’t heard a shotgun being loaded, and went back the way I came. The turn to the other branch of the track was sharp, downhill, and very loose, so I retraced my path to where I could turn around (again). This time was more awkward and I dropped the bike on the left side, downhill. After a couple of attempts I got it back up after taking two of the bags off and swinging it around on the crash bars. (A Harley guy tried to tell me they were “engine bars” the other day, but I explained that my term was intentional and correct.)  Now pointed in the right direction, I took the left track for maybe another half mile and found an old rock slide that looked waaay too sketchy to get over solo, even without the luggage. With a spotter or two, no problem. But not on my own. So another awkward (and somewhat precarious) turnaround commenced, this time without the luggage, and making sure I didn’t accidentally lose the bike down the hillside: the path wasn’t much wider than the bike is long. Once _again_ pointed the other way and the bags reattached, I’m hot, sweaty, a little shaky from exertion at 10,000’, and just about out of water. And it’s about two hours from sunset. Shit. 
@@ -107,23 +100,9 @@ So, what’d I learn? Carry more water than I think I’ll need (which is usuall
 
 I’ll probably keep to the pavement a little more tomorrow, but I can’t wait to keep exploring this beautiful area. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% include exif-image.html img=page.images.img_4762_jpg %}
+{% include exif-image.html img=page.images.img_4734_jpg %}
+{% include exif-image.html img=page.images.img_4736_jpg %}
+{% include exif-image.html img=page.images.img_4737_jpg %}
+{% include exif-image.html img=page.images.img_4738_jpg %}
+{% include exif-image.html img=page.images.img_4740_jpg %}

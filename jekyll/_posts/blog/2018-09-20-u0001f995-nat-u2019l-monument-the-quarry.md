@@ -76,12 +76,6 @@ images:
         name: "Quarry Exhibit Hall, Uintah County, UT \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_5286_jpg %}
-{% include exif-image.html img=page.images.img_5288_jpg %}
-{% include exif-image.html img=page.images.img_5292_jpg %}
-{% include exif-image.html img=page.images.img_5299_jpg %}
-{% include exif-image.html img=page.images.img_5305_jpg %}
-
 Hard to believe today was my last day of touring. I started off with an obscenely large breakfast from Bettie’s in Vernal. It’s an old-school greasy spoon that’s mostly populated by locals at 7:30am. I’m pretty sure the “slice” of ham I got was a pound. 
 
 One of the neat things about Vernal is all of the potted and hanging flowers. They line the streets, hanging from nearly every streetlight and lamp post, and overflow the planters on the sidewalk to the point that you have to turn sideways to get past some of them. They’re a beautiful hazard. 
@@ -90,18 +84,8 @@ From Vernal I headed to the quarry area of Dinosaur National Monument. It’s a 
 
 I am something of a 🦕 enthusiast (I’ve got a post dedicated to them coming up), but facts and figures don’t really stick with me when it comes to geology and paleontology. They were big, and they died a long time ago. But the (more recent) history of the quarry is interesting to me in that they started digging over a century ago, and Earl Douglass (the paleontologist who made the discovery of all the fossils) envisioned a place where people could come see them “in the wild”. And that’s what the Wall of Bones exhibit is all about: it’s a 25ish-foot-tall section of quarry wall that appears as though digging were interrupted, leaving dozens of fossils exposed to view. It’s really something to see. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% include exif-image.html img=page.images.img_5286_jpg %}
+{% include exif-image.html img=page.images.img_5288_jpg %}
+{% include exif-image.html img=page.images.img_5292_jpg %}
+{% include exif-image.html img=page.images.img_5299_jpg %}
+{% include exif-image.html img=page.images.img_5305_jpg %}

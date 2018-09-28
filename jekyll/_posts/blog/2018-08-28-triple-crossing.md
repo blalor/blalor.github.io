@@ -20,6 +20,6 @@ images:
         name: "Richmond City, VA \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.attachment_1_jpeg %}
-
 Not exactly.  That’s a different thing in Richmond…
+
+{% include exif-image.html img=page.images.attachment_1_jpeg %}

@@ -25,6 +25,6 @@ images:
         name: "The Diamond, Richmond City, VA \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_4489_jpg %}
-
 It was a beautiful night for a ride.
+
+{% include exif-image.html img=page.images.img_4489_jpg %}

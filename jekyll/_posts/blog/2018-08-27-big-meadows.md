@@ -22,6 +22,6 @@ images:
         name: "Skyline Drive, Big Meadows, VA \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_4514_jpg %}
-
 Quick trip to Shenandoah for a shamble through the meadow, and a burger. 
+
+{% include exif-image.html img=page.images.img_4514_jpg %}

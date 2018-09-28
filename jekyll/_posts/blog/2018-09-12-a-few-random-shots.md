@@ -49,20 +49,10 @@ images:
         name: "US 24;US 285, Newett, CO \U0001F1FA\U0001F1F8"
 ---
 
-{% include exif-image.html img=page.images.img_4829_jpg %}
-{% include exif-image.html img=page.images.img_4830_jpg %}
-{% include exif-image.html img=page.images.img_4835_jpg %}
-
 Coming out into the valley in Buena Vista; rain shrouding Guanella Pass; beautiful silvery water in a creek along Guanella Pass Road. 
 
 I’m trying to balance some technical limitations to how I’m posting these photos with making the trip at all interesting to anyone other than me. Not sure if it’s working. But hey! More photos!
 
-
-
-
-
-
-
-
-
-
+{% include exif-image.html img=page.images.img_4829_jpg %}
+{% include exif-image.html img=page.images.img_4830_jpg %}
+{% include exif-image.html img=page.images.img_4835_jpg %}
