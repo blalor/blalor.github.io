@@ -64,7 +64,7 @@ The posts below (and the map above) are a log of the trip as I went.
                         })
                     }
                 ).bindPopup(
-                    '<img src="' + popupImgUrl + ' alt="image" /><br />' +
+                    '<img src="' + popupImgUrl + '" alt="image" /><br />' +
                     '<a href="' + postUrl + '">' + postTitle + '</a>',
                     {
                         maxWidth: 400,
