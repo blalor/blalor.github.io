@@ -39,7 +39,28 @@ The posts below (and the map above) are a log of the trip as I went.
             fuelData.addTo(_map);
         });
 
-        var photoGroup = L.featureGroup([]);
+        var photoGroup = L.markerClusterGroup({
+            // default functionality with a custom icon
+            iconCreateFunction: function(cluster) {
+                var childCount = cluster.getChildCount();
+
+                var c = ' marker-cluster-';
+                if (childCount < 10) {
+                    c += 'small';
+                } else if (childCount < 100) {
+                    c += 'medium';
+                } else {
+                    c += 'large';
+                }
+
+                return new L.DivIcon({
+                    html: '<div><span><i class="fas fa-camera"></i> ' + childCount + '</span></div>',
+                    className: 'marker-cluster' + c,
+                    iconSize: new L.Point(40, 40)
+                });
+            }
+        });
+        
         function addPhoto(img, postUrl, postTitle) {
             var iconUrls = [
                 "{{ site.static_images_base_url }}/fit-in/50x50/" + img.path,
@@ -56,6 +77,7 @@ The posts below (and the map above) are a log of the trip as I went.
                         icon: L.icon({
                             _iconUrls: iconUrls,
                             iconUrl: iconUrls[0],
+                            className: "photo-marker-icon",
                         })
                     }
                 ).bindPopup(
