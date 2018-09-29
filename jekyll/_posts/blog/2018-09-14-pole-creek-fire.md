@@ -64,9 +64,9 @@ images:
         name: "Spanish Fork, UT \U0001F1FA\U0001F1F8"
 ---
 
-My route today took me up routes 191 and 6 through Price, Helper, and into Spanish Fork. The Pole Creek Fire started a week ago from a lightning strike and is only 2% contained and is about 20,000 acres. The theme for the day was 💨💨💨 and more 💨; the fire crews have their work cut out for them. 
+My route today took me up routes 191 and 6 through Price, Helper, and into Spanish Fork. The [Pole Creek Fire](https://en.wikipedia.org/wiki/Pole_Creek_Fire_(2018)) started a week ago from a lightning strike and is only 2% contained and is about 20,000 acres. The theme for the day was 💨💨💨 and more 💨; the fire crews have their work cut out for them. 
 
 {% include exif-image.html img=page.images.img_4991_jpg %}
 {% include exif-image.html img=page.images.img_4992_jpg %}
-{% include exif-image.html img=page.images.img_4996_jpg %}
 {% include exif-image.html img=page.images.img_4995_jpg %}
+{% include exif-image.html img=page.images.img_4996_jpg %}
