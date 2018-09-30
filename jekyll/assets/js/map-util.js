@@ -1,17 +1,3 @@
-function getJSON(url, cb) {
-    var request = new XMLHttpRequest();
-    request.open("GET", url, true);
-
-    request.onload = function() {
-        if (request.status >= 200 && request.status < 400) {
-            // Success!
-            cb(JSON.parse(request.responseText));
-        }
-    };
-
-    request.send();
-}
-
 function popUp(feature, layer) {
     var out = [];
     if (feature.properties) {

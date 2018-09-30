@@ -21,7 +21,7 @@ The posts below (and the map above) are a log of the trip as I went.
 
 <script type="text/javascript">
     (function(_map) {
-        getJSON("/assets/geojson/fuel_report.json", function(data) {
+        $.getJSON("/assets/geojson/fuel_report.json", function(data) {
             var fuelData = L.geoJSON(data, {
                 onEachFeature: function(feature, layer){
                     var out = [];

@@ -23,8 +23,17 @@ mapbox_token: pk.eyJ1IjoiYmxhbG9yIiwiYSI6ImNqbWYxcWY3aTA0Ym4zcHFwY25oZXNram4ifQ.
 
 ## these are included _before_ head-custom.html…
 head_scripts:
+    ## moving jquery up top so we can reference it
+    - https://code.jquery.com/jquery-3.3.1.min.js
+    
+    ## map-util is custom
     - /assets/js/map-util.js
 
+## defining footer_scripts disables the defaults, which we want for jquery
+footer_scripts:
+    - /assets/js/main.min.js
+    - https://use.fontawesome.com/releases/v5.0.13/js/all.js ## ninja upgrade!
+    
 ## maps to _data/authors.yaml
 author: blalor@bravo5.org
 
