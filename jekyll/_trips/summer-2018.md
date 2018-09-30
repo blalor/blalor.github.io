@@ -21,18 +21,39 @@ The posts below (and the map above) are a log of the trip as I went.
 
 <script type="text/javascript">
     (function(_map) {
-        var gasIcon = L.divIcon({
-            className: "fa-divicon",
-            // fa-gas-pump is in 5.0.13, we're using 5.0.12 :-(
-            html: '<i class="fas fa-battery-quarter"></i>',
-            // iconSize: [40, 40]
-        });
-        
         getJSON("/assets/geojson/fuel_report.json", function(data) {
             var fuelData = L.geoJSON(data, {
-                onEachFeature: popUp,
+                onEachFeature: function(feature, layer){
+                    var out = [];
+                    if (feature.properties) {
+                        for (key in feature.properties) {
+                            // icon is special for pointToLayer
+                            if (key != "icon") {
+                                out.push(key + ": " + feature.properties[key]);
+                            }
+                        }
+
+                        layer.bindPopup(out.join("<br />"));
+                    }
+                },
                 pointToLayer: function(pt, latlng) {
-                    return L.marker(latlng, { icon: gasIcon });
+                    var icons = {
+                        "fuel": L.divIcon({
+                            className: "fa-divicon",
+                            // fa-gas-pump is in 5.0.13, we're using 5.0.12 :-(
+                            html: '<i class="fas fa-battery-quarter"></i>',
+                            // iconSize: [40, 40]
+                        }),
+                        "maintenance": L.divIcon({
+                            className: "fa-divicon",
+                            // fa-wrench is in 5.0.13, we're using 5.0.12 :-(
+                            html: '<i class="fas fa-cogs"></i>',
+                        }),
+                    };
+
+                    return L.marker(latlng, {
+                        icon: icons[pt.properties.icon]
+                    });
                 }
             });
 

@@ -12,7 +12,7 @@ function getJSON(url, cb) {
     request.send();
 }
 
-function popUp(feature, layer){
+function popUp(feature, layer) {
     var out = [];
     if (feature.properties) {
         for (key in feature.properties) {
