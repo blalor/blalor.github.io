@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:trp="http://www.garmin.com/xmlschemas/TripExtensions/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
-  <trk version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
-    <trk>
+<?xml version='1.0' encoding='UTF-8'?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="gpx.py -- https://github.com/tkrajina/gpxpy" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <trk>
       <name>Sep 21, 2018  7:17</name>
       <trkseg>
         <trkpt lat="38.663833" lon="-90.567839">
@@ -511,9 +510,7 @@
         </trkpt>
       </trkseg>
     </trk>
-  </trk>
-  <trk version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
-    <trk>
+  <trk>
       <name>Sep 21, 2018  7:24</name>
       <trkseg>
         <trkpt lat="38.644565" lon="-90.520325">
@@ -3807,9 +3804,7 @@
         </trkpt>
       </trkseg>
     </trk>
-  </trk>
-  <trk version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
-    <trk>
+  <trk>
       <name>Sep 21, 2018  8:50</name>
       <trkseg>
         <trkpt lat="38.385831" lon="-89.371755">
@@ -9735,9 +9730,7 @@
         </trkpt>
       </trkseg>
     </trk>
-  </trk>
-  <trk version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
-    <trk>
+  <trk>
       <name>Sep 21, 2018 11:10</name>
       <trkseg>
         <trkpt lat="38.209476" lon="-86.864588">
@@ -17267,9 +17260,7 @@
         </trkpt>
       </trkseg>
     </trk>
-  </trk>
-  <trk version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
-    <trk>
+  <trk>
       <name>Sep 21, 2018  1:30</name>
       <trkseg>
         <trkpt lat="38.012666" lon="-84.206784">
@@ -25500,9 +25491,7 @@
         </trkpt>
       </trkseg>
     </trk>
-  </trk>
-  <trk version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
-    <trk>
+  <trk>
       <name>Sep 21, 2018  4:27</name>
       <trkseg>
         <trkpt lat="38.305422" lon="-81.563999">
@@ -37658,9 +37647,7 @@
         </trkpt>
       </trkseg>
     </trk>
-  </trk>
-  <trk version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
-    <trk>
+  <trk>
       <name>Sep 21, 2018  7:11</name>
       <trkseg>
         <trkpt lat="37.839234" lon="-79.371203">
@@ -42829,5 +42816,4 @@
         </trkpt>
       </trkseg>
     </trk>
-  </trk>
-</gpx>
+  </gpx>
