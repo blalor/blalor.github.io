@@ -22,44 +22,88 @@ The posts below (and the map above) are a log of the trip as I went.
 <script type="text/javascript">
     (function(_map) {
         $.getJSON("/assets/geojson/fuel_report.json", function(data) {
-            var fuelData = L.geoJSON(data, {
-                onEachFeature: function(feature, layer){
-                    var out = [];
-                    if (feature.properties) {
-                        for (key in feature.properties) {
-                            // icon is special for pointToLayer
-                            if (key != "icon") {
-                                out.push(key + ": " + feature.properties[key]);
-                            }
+            var icons = {
+                "fuel": L.divIcon({
+                    className: "fa-divicon",
+                    html: '<i class="fas fa-gas-pump"></i>',
+                    // iconSize: [40, 40]
+                }),
+                "maintenance": L.divIcon({
+                    className: "fa-divicon",
+                    html: '<i class="fas fa-wrench"></i>',
+                }),
+            };
+
+            var roadTripGroup = L.markerClusterGroup();
+            
+            // map of roadtrip key to displayed label and value
+            var roadTripMappings = [
+                [
+                    "Date",
+                    function(p) {
+                        var dateObj;
+                        var s = p["Date"].split(" ");
+                        var date = s[0];
+                        var dateComp = date.split("-");
+                        if (s.length == 2) {
+                            var time = s[1];
+                            var timeComp = time.split(":");
+                            dateObj = new Date(
+                                parseInt(dateComp[0]), // year
+                                parseInt(dateComp[1]) - 1, // month
+                                parseInt(dateComp[2]), // day
+                                parseInt(timeComp[0]), // hour
+                                parseInt(timeComp[1])  // minute
+                            );
+                        } else {
+                            dateObj = new Date(
+                                parseInt(dateComp[0]), // year
+                                parseInt(dateComp[1]) - 1, // month
+                                parseInt(dateComp[2]) // day
+                            );
                         }
+                        
+                        return [
+                            "time",
+                            dateObj.toLocaleString()];
+                        }
+                ],
+                ["Odometer (mi)",   function(p) { return ["odometer",             p["Odometer (mi)"]]; }],
+                ["Trip Distance",   function(p) { return ["distance",             p["Trip Distance"]]; }],
+                ["MPG",             function(p) { return ["economy",              parseFloat(p["MPG"]).toFixed(1)]; }],
+                ["Fill Amount",     function(p) { return ["amount",               p["Fill Amount"] + " " + p["Fill Units"]]; }],
+                ["Price per Unit",  function(p) { return ["$/" + p["Fill Units"], p["Price per Unit"]]; }],
+                ["Total Price",     function(p) { return ["total",                p["Total Price"]]; }],
+                ["Note",            function(p) { return ["Note",                 p["Note"]]; }],
+            ];
 
-                        layer.bindPopup(out.join("<br />"));
-                    }
-                },
-                pointToLayer: function(pt, latlng) {
-                    var icons = {
-                        "fuel": L.divIcon({
-                            className: "fa-divicon",
-                            // fa-gas-pump is in 5.0.13, we're using 5.0.12 :-(
-                            html: '<i class="fas fa-battery-quarter"></i>',
-                            // iconSize: [40, 40]
-                        }),
-                        "maintenance": L.divIcon({
-                            className: "fa-divicon",
-                            // fa-wrench is in 5.0.13, we're using 5.0.12 :-(
-                            html: '<i class="fas fa-cogs"></i>',
-                        }),
-                    };
-
-                    return L.marker(latlng, {
-                        icon: icons[pt.properties.icon]
+            data.features.forEach(function(feature) {
+                var popUpContent = [];
+                if (feature.properties) {
+                    roadTripMappings.forEach(function(m) {
+                        if (feature.properties[m[0]]) {
+                            var x = m[1](feature.properties);
+                            popUpContent.push(x[0] + ": " + x[1]);
+                        }
                     });
+                    
+                    roadTripGroup.addLayer(
+                        L.marker(
+                            [
+                                feature.geometry.coordinates[1],
+                                feature.geometry.coordinates[0],
+                            ],
+                            {
+                                icon: icons[feature.properties.icon]
+                            }
+                        ).bindPopup(popUpContent.join("<br />"))
+                    );
                 }
             });
-
-            fuelData.addTo(_map);
+            
+            roadTripGroup.addTo(_map);
         });
-
+        
         var photoGroup = L.markerClusterGroup({
             // default functionality with a custom icon
             iconCreateFunction: function(cluster) {
