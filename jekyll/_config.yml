@@ -25,6 +25,9 @@ mapbox_token: pk.eyJ1IjoiYmxhbG9yIiwiYSI6ImNqbWYxcWY3aTA0Ym4zcHFwY25oZXNram4ifQ.
 head_scripts:
     ## moving jquery up top so we can reference it
     - https://code.jquery.com/jquery-3.3.1.min.js
+    ## lity integration in so-simple theme interferes
+    # - https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js
+    # - https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.js
     
     ## map-util is custom
     - /assets/js/map-util.js

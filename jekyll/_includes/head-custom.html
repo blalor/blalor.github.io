@@ -1,11 +1,28 @@
-{% comment %}
+{%- comment %}
 this include overrides the default, empty one from the so-simple theme
 
 https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity
 
 cat FILENAME.js | openssl dgst -sha512 -binary | openssl base64 -A
 curl -s $( pbpaste ) |  openssl dgst -sha512 -binary | openssl base64 -A | pbcopy
-{% endcomment %}
+{% endcomment -%}
+
+{%- comment %}
+<!-- lity stuff in so-simple theme interferes -->
+<link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css"
+    integrity="sha512-56GJrpSgHk6Mc9Fltt+bQKcICJoEpxtvozXPA5n5OT0rfWiqGlJmJCI/vl16kctf/0XbBloh03vl7OF2xFnR8g=="
+    crossorigin=""
+/>
+
+<link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.css"
+    integrity="sha512-B31/elyDKOSa2yGC1ALSAHkdlJ5FOhZJTNANGUFxWOnVMfKQmekRG2/sNdp6yJPrO7Ae9rlAxUlr0QjiJne01Q=="
+    crossorigin=""
+/>
+{% endcomment -%}
 
 <link
     rel="stylesheet"
