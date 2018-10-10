@@ -1,7 +1,7 @@
 ---
 title: "Moonlight bike ride"
 date: '2018-08-26T09:04:48-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - "\U0001F6B2"

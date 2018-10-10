@@ -1,7 +1,7 @@
 ---
 title: "It’s almost over"
 date: '2018-09-16T21:11:38-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

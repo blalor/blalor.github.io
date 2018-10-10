@@ -1,7 +1,7 @@
 ---
 title: "My everything is wet"
 date: '2018-08-27T18:17:19-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

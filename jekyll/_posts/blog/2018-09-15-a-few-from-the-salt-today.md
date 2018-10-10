@@ -1,7 +1,7 @@
 ---
 title: "A few from the salt today"
 date: '2018-09-14T22:24:52-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

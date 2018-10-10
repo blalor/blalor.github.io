@@ -1,7 +1,7 @@
 ---
 title: "Iceland waterfall"
 date: '2015-07-10T23:11:05-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

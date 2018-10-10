@@ -1,7 +1,7 @@
 ---
 title: "It was a wet one"
 date: '2018-09-08T22:27:54-05:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

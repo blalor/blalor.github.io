@@ -1,7 +1,7 @@
 ---
 title: "The hounds"
 date: '2015-07-10T23:28:34-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

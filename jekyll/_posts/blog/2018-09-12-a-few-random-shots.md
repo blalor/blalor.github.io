@@ -1,7 +1,7 @@
 ---
 title: "A few random shots"
 date: '2018-09-11T21:59:11-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

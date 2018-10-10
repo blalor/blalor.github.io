@@ -1,7 +1,7 @@
 ---
 title: "Kansas blows"
 date: '2018-09-20T22:41:17-05:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - summer2018

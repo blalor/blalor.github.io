@@ -82,40 +82,10 @@ The posts below (and the map above) are a log of the trip as I went.
             }
         });
         
-        function addPhoto(img, postUrl, postTitle) {
-            var iconUrls = [
-                "{{ site.static_images_base_url }}/fit-in/50x50/" + img.path,
-                "{{ site.static_images_base_url }}/fit-in/75x75/" + img.path
-            ];
-            
-            var popupImgUrl = "{{ site.static_images_base_url }}/fit-in/400x/" + img.path;
-            
-            photoGroup.addLayer(
-                L.marker(
-                    [ img.exif.location.latitude, img.exif.location.longitude ],
-                    {
-                        title: postTitle + " - " + img.exif.location.name,
-                        icon: L.icon({
-                            _iconUrls: iconUrls,
-                            iconUrl: iconUrls[0],
-                            className: "photo-marker-icon",
-                        })
-                    }
-                ).bindPopup(
-                    '<img src="' + popupImgUrl + '" alt="image" /><br />' +
-                    '<a href="' + postUrl + '">' + postTitle + '</a>',
-                    {
-                        maxWidth: 400,
-                        minWidth: 400
-                    }
-                )
-            );
-        }
-        
         {% for post in site.tags[page.tag] -%}
             {%- for img in post.images -%}
                 {%- if img[1].exif.location %}
-        addPhoto({{ img[1] | jsonify }}, "{{ post.url | relative_url }}", "{{ post.title }}");
+        addPhotoToGroup(photoGroup, {{ img[1] | jsonify }}, "{{ post.url | relative_url }}", "{{ post.title }}");
                 {%- endif -%}
             {%- endfor -%}
             

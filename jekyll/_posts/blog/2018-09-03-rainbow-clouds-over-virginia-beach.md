@@ -1,7 +1,7 @@
 ---
 title: "Rainbow clouds over Virginia Beach"
 date: '2018-09-02T21:22:21-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

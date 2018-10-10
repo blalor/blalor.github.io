@@ -1,7 +1,7 @@
 ---
 title: "The adventure has begun"
 date: '2018-09-10T23:16:36-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

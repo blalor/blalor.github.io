@@ -1,7 +1,7 @@
 ---
 title: "Another storm, another 🌈"
 date: '2018-09-02T21:24:04-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

@@ -1,7 +1,7 @@
 ---
 title: "As aerodynamic as a closet"
 date: '2018-09-15T15:24:05-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

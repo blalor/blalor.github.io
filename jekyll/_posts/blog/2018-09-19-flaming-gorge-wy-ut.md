@@ -1,7 +1,7 @@
 ---
 title: "Flaming Gorge: WY & UT"
 date: '2018-09-18T20:52:59-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

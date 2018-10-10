@@ -1,7 +1,7 @@
 ---
 title: "My ☕️ tastes like 🐔, and other joys of ⛺️"
 date: '2018-09-12T08:17:23-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

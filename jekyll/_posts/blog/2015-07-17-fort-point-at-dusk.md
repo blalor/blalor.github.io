@@ -1,7 +1,7 @@
 ---
 title: "Fort Point at dusk"
 date: '2015-07-16T22:09:54-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - night

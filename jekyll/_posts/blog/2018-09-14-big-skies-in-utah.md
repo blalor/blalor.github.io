@@ -1,7 +1,7 @@
 ---
 title: "Big skies in Utah"
 date: '2018-09-13T23:02:42-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

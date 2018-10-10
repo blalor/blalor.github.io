@@ -1,7 +1,7 @@
 ---
 title: "Triple-crossing?"
 date: '2018-08-28T12:51:15-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

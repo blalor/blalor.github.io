@@ -1,7 +1,7 @@
 ---
 title: "Time to head back East"
 date: '2018-09-17T13:15:49-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

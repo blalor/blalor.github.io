@@ -1,7 +1,7 @@
 ---
 title: "Still going!"
 date: '2018-09-13T08:02:24-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

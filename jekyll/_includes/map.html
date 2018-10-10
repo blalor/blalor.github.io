@@ -1,0 +1,13 @@
+<div id="map" style="height: {{ page.map_height | default: '500px' }};"></div>
+
+<script type="text/javascript">
+var _map = {{ layout.map_var }} = L.map("map");
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={{ site.mapbox_token }}', {
+    maxZoom: 18,
+    attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> ' +
+        '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
+        '<strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
+    id: 'mapbox.outdoors'
+}).addTo(_map);
+</script>

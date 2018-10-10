@@ -1,7 +1,7 @@
 ---
 title: "🦕 Nat’l Monument: The Quarry"
 date: '2018-09-19T22:00:53-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

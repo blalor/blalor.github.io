@@ -1,7 +1,7 @@
 ---
 title: "The last day on the salt"
 date: '2018-09-17T21:19:29-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

@@ -1,7 +1,7 @@
 ---
 title: "New shoes, and an RVA sighting"
 date: '2018-09-10T21:05:58-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

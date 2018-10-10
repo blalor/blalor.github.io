@@ -1,7 +1,7 @@
 ---
 title: "Guanella Pass"
 date: '2018-09-11T21:53:15-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

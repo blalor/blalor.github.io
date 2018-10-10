@@ -1,7 +1,7 @@
 ---
 title: "On the salt!"
 date: '2018-09-14T08:42:55-06:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

@@ -1,7 +1,7 @@
 ---
 title: "This is the way every great road trip starts"
 date: '2018-09-07T20:06:49-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - summer2018

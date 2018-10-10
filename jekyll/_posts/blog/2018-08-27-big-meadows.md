@@ -1,7 +1,7 @@
 ---
 title: "Big Meadows"
 date: '2018-08-26T23:20:15-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

@@ -1,7 +1,7 @@
 ---
 title: "One more to go!"
 date: '2018-09-21T18:08:43-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

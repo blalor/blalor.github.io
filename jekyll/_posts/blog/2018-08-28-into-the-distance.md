@@ -1,7 +1,7 @@
 ---
 title: "Into the distance"
 date: '2018-08-27T23:51:11-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo

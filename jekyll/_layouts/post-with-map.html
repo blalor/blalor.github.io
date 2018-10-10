@@ -1,0 +1,85 @@
+---
+layout: post
+classes: "layout--post" ## the post css requires this class
+---
+
+{{ content }}
+
+{%- comment -%}
+The nasty mess below is … a mess.  I only want to show the map if there are GPX
+files _or_ images with location data.  But liquid is so … limited that I can't
+filter the page.images map directly, or create a native array, or, or, or.
+
+_images_with_location becomes an array (possibly empty) with keys into page.images
+(which is a hash).
+{%- endcomment -%}
+{%- assign _images_with_location = "" -%}
+{%- for img in page.images -%}
+    {%- if img[1].exif.location %}
+        {%- assign _images_with_location = _images_with_location | append: img[0] | append: "," -%}
+    {%- endif -%}
+{%- endfor -%}
+{%- assign _iwl_size = _images_with_location | size | minus: 1 -%}
+{%- assign _images_with_location = _images_with_location | slice: 0, _iwl_size | split: "," -%}
+
+{% if page.gpx or _images_with_location %}
+<div id="map" style="height: 400px;"></div>
+
+<script type="text/javascript">
+(function() {
+    var _map = L.map("map");
+
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={{ site.mapbox_token }}', {
+        maxZoom: 18,
+        attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> ' +
+            '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
+            '<strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
+        id: 'mapbox.outdoors'
+    }).addTo(_map);
+
+    var bounds = L.latLngBounds();
+    
+    {%- if page.gpx %}
+        {% for gpx in page.gpx %}
+        loadGpx("{{ gpx }}", _map).on("loaded", function(evt) {
+            bounds.extend(evt.target.getBounds())
+            _map.fitBounds(bounds);
+        });
+        {%- endfor %}
+    {% endif -%}
+    
+    {%- if _images_with_location %}
+        var photoGroup = L.markerClusterGroup({
+            // default functionality with a custom icon
+            iconCreateFunction: function(cluster) {
+                var childCount = cluster.getChildCount();
+
+                var c = ' marker-cluster-';
+                if (childCount < 10) {
+                    c += 'small';
+                } else if (childCount < 100) {
+                    c += 'medium';
+                } else {
+                    c += 'large';
+                }
+
+                return new L.DivIcon({
+                    html: '<div><span><i class="fas fa-camera"></i> ' + childCount + '</span></div>',
+                    className: 'marker-cluster' + c,
+                    iconSize: new L.Point(40, 40)
+                });
+            }
+        });
+
+        {% for img in _images_with_location %}
+        addPhotoToGroup(photoGroup, {{ page.images[img] | jsonify }}, "{{ page.url | relative_url }}", "{{ page.title }}");
+        {%- endfor %}
+
+        photoGroup.addTo(_map);
+        
+        bounds.extend(photoGroup.getBounds())
+        _map.fitBounds(bounds);
+    {% endif -%}
+})();
+</script>
+{% endif %}
