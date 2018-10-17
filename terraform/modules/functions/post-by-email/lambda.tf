@@ -5,6 +5,8 @@ resource "aws_lambda_function" "fn" {
 
     runtime = "python2.7"
     timeout = 300
+    ## git seems kinda hungry
+    memory_size = 256
 
     s3_bucket = "${module.fingerprinted_bucket_object.bucket}"
     s3_key    = "${module.fingerprinted_bucket_object.object}"
