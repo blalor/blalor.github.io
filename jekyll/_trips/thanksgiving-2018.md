@@ -11,6 +11,8 @@ show_excerpts: false
 Thanksgiving with friends in Death Valley National Park.
 <!--more-->
 
+_Map locations approximate!_
+
 <div class="entries-{{ page.entries_layout | default: 'list' }}">
     {% for entry in site.tags[page.tag] -%}
         {% include entry.html %}
@@ -187,13 +189,13 @@ Thanksgiving with friends in Death Valley National Park.
             icon: icons["hotel"]
         }));
 
-        
-
         markerGroup.bindPopup(function(m) {
             return "<p>" + m.options.title + "</p>";
         });
         
         markerGroup.addTo(_map);
         _map.fitBounds(markerGroup.getBounds());
+        
+        loadGpx("/assets/gpx/LAS-to-Panamint.gpx", _map);
     })({{ layout.map_var }});
 </script>

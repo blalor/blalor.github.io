@@ -21,20 +21,23 @@ function loadGpx(gpx, _map) {
                 startIconUrl: null,
                 startIcon: null,
                 endIconUrl: null,
-                endIcon: null
+                endIcon: null,
+
+                shadowUrl: null,
+                wptIconUrls: null,
             }
         }).addTo(_map);
 }
 
 function addPhotoToGroup(group, img, postUrl, postTitle) {
     var base_url = "{{ site.static_images_base_url }}";
-    
+
     var popupImgUrl = base_url + "/fit-in/400x/" + img.path;
     var iconUrls = [
         base_url + "/fit-in/50x50/" + img.path,
         base_url + "/fit-in/75x75/" + img.path
     ];
-    
+
     group.addLayer(
         L.marker(
             [ img.exif.location.latitude, img.exif.location.longitude ],
