@@ -28,15 +28,15 @@ head_scripts:
     ## lity integration in so-simple theme interferes
     # - https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js
     # - https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.js
-    
+
     ## map-util is custom
     - /assets/js/map-util.js
 
 ## defining footer_scripts disables the defaults, which we want for jquery
 footer_scripts:
     - /assets/js/main.min.js
-    - https://use.fontawesome.com/releases/v5.0.13/js/all.js ## ninja upgrade!
-    
+    - https://use.fontawesome.com/releases/v5.4.0/js/all.js ## ninja upgrade!
+
 ## maps to _data/authors.yaml
 author: blalor@bravo5.org
 
