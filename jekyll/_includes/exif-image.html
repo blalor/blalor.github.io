@@ -1,8 +1,10 @@
 {% assign img = include.img %}
 <figure>
     <a href="{{ site.static_images_base_url }}/fit-in/1600x/{{ img.path }}" data-lity><img src="{{ site.static_images_base_url }}/fit-in/800x/{{ img.path }}" alt="image"></a>
-    {% if img.exif.location.name -%}
+    {% if img.exif.location.name or img.caption -%}
     <figcaption>
+        {%- if img.caption -%}<i>{{ img.caption }}</i>{%- endif -%}
+
         {%- if img.exif.location.name -%}
             Taken near {{ img.exif.location.name }}
         {%- endif -%}
