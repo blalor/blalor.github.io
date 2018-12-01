@@ -48,18 +48,8 @@ images:
         name: "Richmond City, VA \U0001F1FA\U0001F1F8"
 ---
 
+Unlike other parts of the country, late November is still quite pleasant around Richmond. 😉
+
 {% include exif-image.html img=page.images.img_5864_jpg %}
 {% include exif-image.html img=page.images.img_5868_jpg %}
 {% include exif-image.html img=page.images.img_5866_jpg %}
-
-Unlike other parts of the country, late November is still quite pleasant around Richmond. 😉
-
-
-
-
-
-
-
-
-
-
