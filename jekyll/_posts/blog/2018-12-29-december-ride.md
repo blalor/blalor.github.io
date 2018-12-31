@@ -1,6 +1,6 @@
 ---
 title: "December ride"
-date: '2018-12-30T20:58:56-05:00'
+date: '2018-12-29T18:00:00-05:00'
 layout: post-with-map
 categories: blog
 tags:
