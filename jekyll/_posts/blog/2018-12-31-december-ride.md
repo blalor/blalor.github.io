@@ -1,7 +1,7 @@
 ---
 title: "December ride"
 date: '2018-12-30T20:58:56-05:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo
@@ -72,28 +72,14 @@ images:
         latitude: 37.67232222222222
         longitude: -79.10945833333332
         name: "Jerusalem Church, Gidsville, VA \U0001F1FA\U0001F1F8"
+gpx:
+  - /assets/gpx/2018-12-29.gpx
 ---
-
-{% include exif-image.html img=page.images.img_6091_jpg %}
-{% include exif-image.html img=page.images.img_6093_jpg %}
-{% include exif-image.html img=page.images.img_6109_jpg %}
-{% include exif-image.html img=page.images.img_6103_jpg %}
-{% include exif-image.html img=page.images.img_6088_jpg %}
 
 A beautiful day in the 60s at the end of December demands an all-day motorcycle ride to the mountains. It’s some kinda law. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% include exif-image.html img=page.images.img_6088_jpg %}
+{% include exif-image.html img=page.images.img_6091_jpg %}
+{% include exif-image.html img=page.images.img_6093_jpg %}
+{% include exif-image.html img=page.images.img_6103_jpg %}
+{% include exif-image.html img=page.images.img_6109_jpg %}
