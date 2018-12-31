@@ -25,6 +25,18 @@ _images_with_location becomes an array (possibly empty) with keys into page.imag
 {% if page.gpx or _images_with_location %}
 <div id="map" style="height: 400px;"></div>
 
+{% if page.gpx %}
+<p><!-- kludge to add space below map div --></p>
+
+<h2>Tracks</h2>
+
+<ul>
+    {%- for gpx in page.gpx %}
+    <li><a href="{{ gpx }}">{{ gpx | split: "/" | last }}</a></li>
+    {%- endfor %}
+</ul>
+{% endif -%}
+
 <script type="text/javascript">
 (function() {
     var _map = L.map("map");
