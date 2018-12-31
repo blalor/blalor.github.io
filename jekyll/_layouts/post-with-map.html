@@ -39,7 +39,7 @@ _images_with_location becomes an array (possibly empty) with keys into page.imag
 
 <script type="text/javascript">
 (function() {
-    var _map = L.map("map");
+    var _map = L.map("map", {fullscreenControl: true});
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={{ site.mapbox_token }}', {
         maxZoom: 18,
