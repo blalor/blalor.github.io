@@ -61,3 +61,13 @@ resource "aws_route53_record" "pbe_mx" {
 
     ttl = "60"
 }
+
+resource "aws_route53_record" "keybase_proof" {
+    zone_id = "${data.aws_route53_zone.main.zone_id}"
+    name = "_keybase.${aws_ses_domain_identity.pbe.domain}"
+    type = "TXT"
+    ttl = "60"
+    records = [
+        "keybase-site-verification=PAZ7Vv-DG1Zz00W2qBO9A4iEC5ZlsimjZLirwOOEG-E"
+    ]
+}
