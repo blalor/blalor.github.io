@@ -64,7 +64,7 @@ resource "aws_route53_record" "pbe_mx" {
 
 resource "aws_route53_record" "keybase_proof" {
     zone_id = "${data.aws_route53_zone.main.zone_id}"
-    name = "_keybase.${aws_ses_domain_identity.pbe.domain}"
+    name = "_keybase.${var.site_name}"
     type = "TXT"
     ttl = "60"
     records = [
