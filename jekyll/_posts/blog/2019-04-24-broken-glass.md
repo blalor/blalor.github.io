@@ -20,9 +20,3 @@ images:
 {% include exif-image.html img=page.images.p4230005_jpg %}
 
 The glass map panels on the Pulse stations seem to be fragile. I drove past this one a couple of days ago when the afternoon sun was behind it and it looked awesome.  I just couldn’t capture it in a photo.
-
-
-— 
-Brian Lalor
-blalor@bravo5.org
-
