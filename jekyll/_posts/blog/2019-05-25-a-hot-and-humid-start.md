@@ -1,7 +1,7 @@
 ---
 title: "A hot and humid start"
 date: '2019-05-24T22:13:28-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - hex2019
