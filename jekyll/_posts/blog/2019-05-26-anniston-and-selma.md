@@ -1,7 +1,7 @@
 ---
 title: Anniston and Selma, Alabama
 date: '2019-05-26T10:00:00-05:00'
-layout: post # -with-map @todo after geotagging photos
+layout: post-with-map
 categories: blog
 tags:
 - hex2019
@@ -29,7 +29,7 @@ images:
   p5260205_jpg:
     path: posts/2019-05-26-anniston-and-selma/P5260205.jpg
 gpx:
-  - /assets/gpx/2017-05-26.gpx
+  - /assets/gpx/combined-2019-05-26T13:29:26+00:00-2019-05-27T02:10:19+00:00.gpx
 ---
 
 I started planning this trip back in January without anything more than a destination of Austin in mind.  It was pretty easy to see that I'd spend some time in the Smokies revisiting a few places I'd enjoyed before, but after that I didn't have much to build an agenda with.  A [friend](http://motozor.com/) (who has inspired me to write this blog and do more trips) did the Iron Butt National Park Tour Challenge last year and I realized looking for National Parks and Monuments to check out would be a good way to find some stuff to see in places I'd normally never go.  In the end I only ended up with one National Monument stop, but it helped inform the rest of the trip and gave me a lot to think about.<!--more-->
