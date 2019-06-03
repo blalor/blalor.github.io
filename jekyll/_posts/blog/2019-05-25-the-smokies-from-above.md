@@ -25,7 +25,7 @@ images:
 
 Confirming the adage that "stuff expands to fill available space" I grabbed my drone at the last minute because I had the room (sort of).  I don't use it much, and traveling with it on the bike is kind of a pain in the ass.  But if I only use it on this trip to get these shots it'll have been worth it.  
 
-The Smokies are amazing and photos from the ground never do the views justice.  I think these do, however.
+The Smokies are amazing and photos from the ground never do the views justice.  I think these do, however.<!--more-->
 
 {% include exif-image.html img=page.images.dji_0176_jpg %}
 {% include exif-image.html img=page.images.dji_0177_jpg %}
