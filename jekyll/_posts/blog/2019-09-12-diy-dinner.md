@@ -14,6 +14,6 @@ images:
 
 {% include exif-image.html img=page.images.image1_jpeg %}
 
-When the Red Shoe Pub is unexpectedly closed, you’ve just gotta make do. So far Nova Scotia has been colder, wetter, and windier than expected. Good thing I missed the hurricane!
+When the [Red Shoe Pub](https://www.redshoepub.com) is unexpectedly closed, you’ve just gotta make do. So far Nova Scotia has been colder, wetter, and windier than expected. Good thing I missed the hurricane!
 
 
