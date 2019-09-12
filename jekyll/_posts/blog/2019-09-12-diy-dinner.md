@@ -9,7 +9,12 @@ author: blalor@bravo5.org
 images:
   image1_jpeg:
     path: email/2019-09-12-diy-dinner/image1.jpeg
-    exif: {}
+    exif:
+      location:
+        latitude: 46.076272
+        longitude: -61.399538
+        name: Mabou, NS 🇨🇦
+
 ---
 
 {% include exif-image.html img=page.images.image1_jpeg %}
