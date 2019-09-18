@@ -1,10 +1,11 @@
 ---
 title: "Goodbye Virginia, see you in a week or so!"
 date: '2019-09-07T17:07:35-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo
+- summer2019
 author: blalor@bravo5.org
 images:
   img_8567_jpg:

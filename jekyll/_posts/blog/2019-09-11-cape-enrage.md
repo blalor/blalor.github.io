@@ -1,10 +1,11 @@
 ---
 title: "Cape Enrage"
 date: '2019-09-11T12:03:48-03:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo
+- summer2019
 author: blalor@bravo5.org
 images:
   img_8602_jpg:

@@ -1,10 +1,11 @@
 ---
 title: "Sunrise on Limekiln Lake"
 date: '2019-09-09T09:15:12-04:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo
+- summer2019
 author: blalor@bravo5.org
 images:
   img_8579_jpg:

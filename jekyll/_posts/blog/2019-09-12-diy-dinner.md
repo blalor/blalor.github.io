@@ -1,10 +1,11 @@
 ---
 title: "DIY dinner"
 date: '2019-09-11T21:10:52-03:00'
-layout: post
+layout: post-with-map
 categories: blog
 tags:
 - photo
+- summer2019
 author: blalor@bravo5.org
 images:
   image1_jpeg:
