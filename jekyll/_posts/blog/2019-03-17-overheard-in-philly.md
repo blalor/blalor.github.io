@@ -3,7 +3,6 @@ title: "Overheard in Philly"
 date: '2019-03-16T20:07:08-04:00'
 layout: post
 categories: blog
-tags: []
 author: blalor@bravo5.org
 ---
 
