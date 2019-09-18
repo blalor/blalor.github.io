@@ -1,0 +1,692 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -77.791221, 
+                    38.728315
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "99", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "2.574", 
+                "Latitude": "38.728315", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "7.62", 
+                "Trip Comp Fuel Economy": "39.200001", 
+                "Price per Unit": "2.959", 
+                "Trip Comp Avg. Speed": "55.299999", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "47866", 
+                "Date": "2019-9-7 7:58", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-77.791221", 
+                "Flags": "0", 
+                "ID": "18", 
+                "icon": "fuel", 
+                "MPG": "38.4615", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -77.564809, 
+                    40.606722
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "181", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "4.267", 
+                "Latitude": "40.606722", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "13.74", 
+                "Trip Comp Fuel Economy": "42.700001", 
+                "Price per Unit": "3.219", 
+                "Trip Comp Avg. Speed": "50.900002", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "48047", 
+                "Date": "2019-9-7 12:12", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-77.564809", 
+                "Flags": "0", 
+                "ID": "20", 
+                "icon": "fuel", 
+                "MPG": "42.4186", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -76.872485, 
+                    42.50101
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "243", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "5.944", 
+                "Latitude": "42.50101", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "19.49", 
+                "Trip Comp Fuel Economy": "40.5", 
+                "Price per Unit": "3.279", 
+                "Trip Comp Avg. Speed": "58.400002", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "48290", 
+                "Date": "2019-9-8 11:10", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-76.872485", 
+                "Flags": "0", 
+                "ID": "22", 
+                "icon": "fuel", 
+                "MPG": "40.8816", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -74.78778, 
+                    43.746115
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "188", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "4.487", 
+                "Latitude": "43.746115", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "15.7", 
+                "Trip Comp Fuel Economy": "42.700001", 
+                "Price per Unit": "3.499", 
+                "Trip Comp Avg. Speed": "47.099998", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "48478", 
+                "Date": "2019-9-8 18:37", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-74.78778", 
+                "Flags": "0", 
+                "ID": "24", 
+                "icon": "fuel", 
+                "MPG": "41.8988", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -72.090537, 
+                    44.161751
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "209", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "4.774", 
+                "Latitude": "44.161751", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "14.79", 
+                "Trip Comp Fuel Economy": "", 
+                "Price per Unit": "3.099", 
+                "Trip Comp Avg. Speed": "", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "48687", 
+                "Date": "2019-9-9 15:17", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-72.090537", 
+                "Flags": "0", 
+                "ID": "26", 
+                "icon": "fuel", 
+                "MPG": "43.7788", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -69.117653, 
+                    44.12366
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "189", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "4.205", 
+                "Latitude": "44.12366", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "13.87", 
+                "Trip Comp Fuel Economy": "44.299999", 
+                "Price per Unit": "3.299", 
+                "Trip Comp Avg. Speed": "51.299999", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "48876", 
+                "Date": "2019-9-9 19:28", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-69.117653", 
+                "Flags": "0", 
+                "ID": "28", 
+                "icon": "fuel", 
+                "MPG": "44.9465", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -67.015062, 
+                    44.840922
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "170", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "3.852", 
+                "Latitude": "44.840922", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "12.36", 
+                "Trip Comp Fuel Economy": "44.299999", 
+                "Price per Unit": "3.209", 
+                "Trip Comp Avg. Speed": "41.299999", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "49046", 
+                "Date": "2019-9-10 14:14", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-67.015062", 
+                "Flags": "0", 
+                "ID": "30", 
+                "icon": "fuel", 
+                "MPG": "44.1329", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -64.802725, 
+                    46.076092
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "168", 
+                "Note": "", 
+                "Currency Code": "CAD", 
+                "Fill Amount": "15.848", 
+                "Latitude": "46.076092", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "19.95", 
+                "Trip Comp Fuel Economy": "39.200001", 
+                "Price per Unit": "1.259", 
+                "Trip Comp Avg. Speed": "50.799999", 
+                "Fill Units": "L", 
+                "Odometer (mi)": "49214", 
+                "Date": "2019-9-10 21:31", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-64.802725", 
+                "Flags": "0", 
+                "ID": "32", 
+                "icon": "fuel", 
+                "MPG": "40.128", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1.324244", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -62.657895, 
+                    45.581358
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "240", 
+                "Note": "", 
+                "Currency Code": "CAD", 
+                "Fill Amount": "23.069", 
+                "Latitude": "45.581358", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "27.61", 
+                "Trip Comp Fuel Economy": "", 
+                "Price per Unit": "1.197", 
+                "Trip Comp Avg. Speed": "", 
+                "Fill Units": "L", 
+                "Odometer (mi)": "49454", 
+                "Date": "2019-9-11 15:11", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-62.657895", 
+                "Flags": "0", 
+                "ID": "34", 
+                "icon": "fuel", 
+                "MPG": "39.3818", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1.324244", 
+                "Octane": "Premium", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -60.747349, 
+                    46.101221
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "178", 
+                "Note": "", 
+                "Currency Code": "CAD", 
+                "Fill Amount": "15.244", 
+                "Latitude": "46.101221", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "17.5", 
+                "Trip Comp Fuel Economy": "", 
+                "Price per Unit": "1.148", 
+                "Trip Comp Avg. Speed": "", 
+                "Fill Units": "L", 
+                "Odometer (mi)": "49632", 
+                "Date": "2019-9-12 14:27", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-60.747349", 
+                "Flags": "0", 
+                "ID": "36", 
+                "icon": "fuel", 
+                "MPG": "44.2012", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1.324244", 
+                "Octane": "Regular", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -60.488702, 
+                    46.882968
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "116", 
+                "Note": "", 
+                "Currency Code": "CAD", 
+                "Fill Amount": "10.608", 
+                "Latitude": "46.882968", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "13.05", 
+                "Trip Comp Fuel Economy": "", 
+                "Price per Unit": "1.23", 
+                "Trip Comp Avg. Speed": "", 
+                "Fill Units": "L", 
+                "Odometer (mi)": "49748", 
+                "Date": "2019-9-13 11:52", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-60.488702", 
+                "Flags": "0", 
+                "ID": "38", 
+                "icon": "fuel", 
+                "MPG": "41.394", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1.324244", 
+                "Octane": "Premium", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -61.444634, 
+                    45.653309
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "182", 
+                "Note": "", 
+                "Currency Code": "CAD", 
+                "Fill Amount": "15.673", 
+                "Latitude": "45.653309", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "19.15", 
+                "Trip Comp Fuel Economy": "42.700001", 
+                "Price per Unit": "1.222", 
+                "Trip Comp Avg. Speed": "39.200001", 
+                "Fill Units": "L", 
+                "Odometer (mi)": "49930", 
+                "Date": "2019-9-14 12:01", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-61.444634", 
+                "Flags": "0", 
+                "ID": "40", 
+                "icon": "fuel", 
+                "MPG": "43.9574", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1.324244", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -64.728519, 
+                    46.131383
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "200", 
+                "Note": "", 
+                "Currency Code": "CAD", 
+                "Fill Amount": "19.595", 
+                "Latitude": "46.131383", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "65", 
+                "Total Price": "24.67", 
+                "Trip Comp Fuel Economy": "37.299999", 
+                "Price per Unit": "1.259", 
+                "Trip Comp Avg. Speed": "70.699997", 
+                "Fill Units": "L", 
+                "Odometer (mi)": "50130", 
+                "Date": "2019-9-14 15:11", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-64.728519", 
+                "Flags": "0", 
+                "ID": "42", 
+                "icon": "fuel", 
+                "MPG": "38.6365", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1.324244", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -67.348533, 
+                    45.123224
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "176", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "5.207", 
+                "Latitude": "45.123224", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "60", 
+                "Total Price": "16.5", 
+                "Trip Comp Fuel Economy": "36.700001", 
+                "Price per Unit": "3.169", 
+                "Trip Comp Avg. Speed": "71", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "50306", 
+                "Date": "2019-9-14 16:58", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-67.348533", 
+                "Flags": "0", 
+                "ID": "44", 
+                "icon": "fuel", 
+                "MPG": "33.8007", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -69.796435, 
+                    44.349009
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "167", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "4.318", 
+                "Latitude": "44.349009", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "59", 
+                "Total Price": "12.82", 
+                "Trip Comp Fuel Economy": "40.5", 
+                "Price per Unit": "2.969", 
+                "Trip Comp Avg. Speed": "58.900002", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "50473", 
+                "Date": "2019-9-14 21:15", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-69.796435", 
+                "Flags": "0", 
+                "ID": "46", 
+                "icon": "fuel", 
+                "MPG": "38.6753", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -71.964259, 
+                    42.156123
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "212", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "5.562", 
+                "Latitude": "42.156123", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "70", 
+                "Total Price": "18.29", 
+                "Trip Comp Fuel Economy": "37.900002", 
+                "Price per Unit": "3.289", 
+                "Trip Comp Avg. Speed": "69.199997", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "50685", 
+                "Date": "2019-9-15 9:49", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-71.964259", 
+                "Flags": "0", 
+                "ID": "48", 
+                "icon": "fuel", 
+                "MPG": "38.1158", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -75.002788, 
+                    39.885558
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Trip Distance": "259", 
+                "Note": "", 
+                "Currency Code": "", 
+                "Fill Amount": "6.02", 
+                "Latitude": "39.885558", 
+                "Conditions": "", 
+                "Trip Comp Temperature": "", 
+                "Total Price": "19.98", 
+                "Trip Comp Fuel Economy": "43.5", 
+                "Price per Unit": "3.319", 
+                "Trip Comp Avg. Speed": "63.799999", 
+                "Fill Units": "Gal", 
+                "Odometer (mi)": "50944", 
+                "Date": "2019-9-15 14:57", 
+                "Payment": "", 
+                "Categories": "", 
+                "Reset": "", 
+                "Longitude": "-75.002788", 
+                "Flags": "0", 
+                "ID": "50", 
+                "icon": "fuel", 
+                "MPG": "43.0233", 
+                "Partial Fill": "", 
+                "Trip Comp Drive Time": "", 
+                "Currency Rate": "1", 
+                "Octane": "", 
+                "Location": ""
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -76.51983, 
+                    42.227108
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "Note": "A little more than half. ", 
+                "Description": "Oil Level Check", 
+                "Currency Rate": "1", 
+                "Latitude": "42.227108", 
+                "Longitude": "-76.51983", 
+                "ID": "24", 
+                "Odometer (mi.)": "48253", 
+                "Subtype": "Inspection", 
+                "Flags": "0", 
+                "Date": "2019-9-8 10:00", 
+                "Type": "Service", 
+                "icon": "maintenance"
+            }
+        }
+    ]
+}

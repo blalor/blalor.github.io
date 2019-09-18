@@ -15,7 +15,6 @@ images:
         latitude: 46.076272
         longitude: -61.399538
         name: Mabou, NS 🇨🇦
-
 ---
 
 {% include exif-image.html img=page.images.image1_jpeg %}
