@@ -25,6 +25,7 @@ _images_with_location becomes an array (possibly empty) with keys into page.imag
 {% if page.gpx or _images_with_location %}
 <div id="map" style="height: 400px;"></div>
 
+{% comment %}
 {% if page.gpx %}
 <p><!-- kludge to add space below map div --></p>
 
@@ -36,6 +37,7 @@ _images_with_location becomes an array (possibly empty) with keys into page.imag
     {%- endfor %}
 </ul>
 {% endif -%}
+{% endcomment %}
 
 <script type="text/javascript">
 (function() {
