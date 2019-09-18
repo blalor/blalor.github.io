@@ -125,6 +125,9 @@ The posts below (and the map above) are a log of the trip as I went.
             }
         });
         
+        // allow gpx assets to be reused across posts but without adding them to the map multiple times
+        var gpxAssets = new Set();
+        
         {% for post in site.tags[page.tag] -%}
             {%- for img in post.images -%}
                 {%- if img[1].exif.location %}
@@ -133,9 +136,13 @@ The posts below (and the map above) are a log of the trip as I went.
             {%- endfor -%}
             
             {%- for gpx in post.gpx %}
-        loadGpx("{{ gpx }}", _map);
+        gpxAssets.add("{{ gpx }}")
             {%- endfor =%}
         {%- endfor %}
+
+        for (var iter = gpxAssets.values(), asset= null; asset = iter.next().value; ) {
+            loadGpx(asset, _map);
+        }
 
         photoGroup.addTo(_map);
         _map.fitBounds(photoGroup.getBounds());
