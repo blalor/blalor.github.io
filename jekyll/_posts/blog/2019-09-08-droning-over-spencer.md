@@ -66,7 +66,9 @@ images:
         name: North Spencer, NY 🇺🇸
 ---
 
-Summary of day 1. 
+I bring my drone with me on lots of motorcycle trips.  If I'm lucky I'm able to get some neat shots that just aren't possible from the ground.  If I'm really lucky I can avoid crashing it.  If I'm _super_ lucky it doesn't get broken in transit.  So far so good. 🍀
+
+These were taken over the house I grew up in and that my mom still lives in.  Not a lot's changed: it's still rural, still beautiful, still grey most of the dang year. Which makes the field of solar panels across from the high school all the more ironic.  I've got a lot of memories from this place.  I flew sailplanes for a lot of my teens and early 20s, but never managed to get over my own house, so I find these particularly neat.
 
 {% include exif-image.html img=page.images.dji_0238_jpg %}
 {% include exif-image.html img=page.images.dji_0241_jpg %}

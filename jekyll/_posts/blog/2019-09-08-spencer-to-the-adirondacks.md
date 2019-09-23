@@ -113,7 +113,13 @@ gpx:
 - /assets/gpx/combined-2019-09-08T10:16:39-2019-09-08T19:37:12.gpx
 ---
 
-Summary of day 2. 
+After messing with the drone we headed up through Watkins Glen to the Ginny Lee Café in Lodi, which has great views of Seneca Lake and the Wagner vineyard.  There was some kind of vintage car festival going on at the Glen, so (a) there was a ton of traffic through Watkins, and (b) there were of cool cars old and new all over the region.  It was a chilly morning and it made me happy to see so many roadsters out with their tops down.
+
+After lunch I split off on my own again and headed for the Adirondacks.  My initial plan had been to make a mad dash for Cape Breton in Nova Scotia from home, but Hurrican Dorian and I would have been arriving at the same time, which is right about now.  So now I'm taking a far less direct but much more scenic route through NY, VT, NH, and ME, and will probably save the mad dash for getting back home.  This part of NY, between the Finger Lakes and around Syracuse, is pretty flat.  It's scenic (as Scenic Highway 414 would imply), but not particularly interesting.  414, routes 5 and 20, and bunch of other pretty but straight roads took me Northeast around Syracuse, toward Rome, and generally in the direction of the Adirondacks, with no particular destination other than a pin on the map somewhere on Rt 28, which _did_ look interesting.  From Rome on to Inlet and [Limekiln Lake Campground](https://www.dec.ny.gov/outdoor/24476.html) (my destination tonight) it was really a pretty ride through the woods and with some great twisty, flowing roads.  I could spend a lot of time just exploring the area.
+
+After getting settled into camp I headed back into Inlet for a glass of cider, boxed pizza, and some wifi at the Screamen Eagle (yes, it's spelled like that).  Tonight I'm camping, but it's promising to be a chilly evening and so far I don't think I've got enough warm clothes with me…
+
+I’m loving the new bike, a 2007 BMW R1200RT. It looks one step removed from a Goldwing, but moves and handles well, and does a good job coping with the weight of all the crap I’m carrying. 
 
 {% include exif-image.html img=page.images.img_8573_jpg %}
 {% include exif-image.html img=page.images.img_8576_jpg %}

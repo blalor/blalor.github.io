@@ -23,11 +23,6 @@ images:
         name: Adirondack Park, Herkimer County, NY 🇺🇸
 ---
 
-{% include exif-image.html img=page.images.img_8579_jpg %}
-
-Shortish day from the Finger Lakes yesterday. I spent Saturday night and yesterday morning visiting my mom, so I’ve covered a little less ground than I typically do on travel days. I’m working my way toward Nova Scotia, but my initial plan had to be modified to avoid Hurricane Dorian, which hit Cape Breton just about the time I’d intended to be there. So I’m sort of reversing the route and taking the long way through NY, VT, NH, and ME, sort of an unintended tour of New England (I’ll probably touch the rest on the way home).  I don’t have any particular points of interest on the way, so I’m just trying to take scenic routes and try not to hate the GPS too much (it’s a fussy, persnickety thing). 
-I’m loving the new bike, a 2007 BMW R1200RT. It looks one step removed from a Goldwing, but moves and handles well, and does a good job coping with the weight of all the crap I’m carrying. 
+It was a chilly night, and about 45° this morning.  I didn't freeze, but I wasn't really warm enough, either.  Heck of a sunrise on the lake, tho!
  
-
-
-
+{% include exif-image.html img=page.images.img_8579_jpg %}
