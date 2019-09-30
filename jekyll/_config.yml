@@ -2,7 +2,7 @@ title: "αβ"
 locale: en-US
 description: Bonneville or Bust
 timezone: "America/New_York"
-date_format: "%b %-d, %Y at %I:%M%P"
+date_format: "%a, %b %-d, %Y at %I:%M%P"
 
 strict_front_matter: true
 
