@@ -47,6 +47,8 @@ images:
         latitude: 45.595730555555555
         longitude: -64.7808
         name: Cape Enrage Road, Harvey Parish, NB 🇨🇦
+gpx:
+- /assets/gpx/combined-2019-09-11T08:08:29-2019-09-11T17:56:40.gpx
 ---
 
 {% include exif-image.html img=page.images.img_8603_jpg %}
@@ -64,4 +66,4 @@ Cape Enrage, on the other hand, was worth the trip. It’s an old lighthouse on 
 
 
 
-
+
