@@ -1,6 +1,6 @@
 ---
 title: "Some days you just need to be there when the brewery opens"
-date: '2020-02-08T22:07:44-05:00'
+date: '2020-02-06T16:12:09-05:00'
 layout: post
 categories: blog
 tags:
